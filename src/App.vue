@@ -28,7 +28,7 @@ const whiteCards = computed(() =>
                 :style="`background-image: url(${card.image_uris.art_crop});`"
                 class="w-full h-10 relative bg-cover my-2 rounded shadow-2xl"
                 v-for="card in whiteCards"
-                :key="card.id"
+                :key="card.name"
                 @click="selectedWhiteCard = card.name"
               >
                 <div
