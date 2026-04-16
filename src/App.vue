@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-import cardData from './sets/SOS-card-base.json'
+import cardData from './sets/SOS-slimmed.json'
 import { ref } from 'vue'
 
 const cards = ref(cardData)
