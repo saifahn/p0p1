@@ -1,45 +1,108 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, reactive, type ComputedRef, type Ref } from 'vue'
 
 import cardData from './sets/SOS-slimmed.json'
 import { ref } from 'vue'
+import CardChoice, { type Card } from './components/CardChoice.vue'
 
 const cards = ref(cardData)
 
-const selectedWhiteCard = ref('')
+const commonCards = computed(() => cards.value.filter((card) => card.rarity === 'common'))
 
-const whiteCards = computed(() =>
-  cards.value.filter((card) => card.colors.length === 1 && card.colors[0] === 'W'),
+const commonUncommonCards = computed(() =>
+  cards.value.filter((card) => card.rarity === 'uncommon' || card.rarity === 'common'),
 )
+
+type MapOfCards = {
+  [key: string]: {
+    label: string
+    selected: Ref<Card | undefined>
+    cards: ComputedRef<Card[]>
+  }
+}
+
+type MtgColorCode = 'W' | 'U' | 'B' | 'R' | 'G'
+
+function isCardExactlyColors(card: Card, colors: MtgColorCode[]) {
+  return (
+    card.colors.length === colors.length && colors.every((color) => card.colors.includes(color))
+  )
+}
+
+const mapOfCards = reactive({
+  whiteCommons: {
+    label: 'White Common',
+    selected: ref(),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['W']))),
+  },
+  blueCommons: {
+    label: 'Blue Common',
+    selected: ref(),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['U']))),
+  },
+  blackCommons: {
+    label: 'Black Common',
+    selected: ref(),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['B']))),
+  },
+  redCommons: {
+    label: 'Red Common',
+    selected: ref(),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['R']))),
+  },
+  greenCommons: {
+    label: 'Green Common',
+    selected: ref(),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['G']))),
+  },
+  wbCards: {
+    label: 'Silverquill Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'B'])),
+    ),
+  },
+  wrCards: {
+    label: 'Lorehold Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'R'])),
+    ),
+  },
+  urCards: {
+    label: 'Prismari Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'R'])),
+    ),
+  },
+  ugCards: {
+    label: 'Quandrix Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'G'])),
+    ),
+  },
+  gbCards: {
+    label: 'Witherbloom Card',
+    selected: ref(),
+    cards: computed(() => cards.value.filter((card) => isCardExactlyColors(card, ['B', 'G']))),
+  },
+} satisfies MapOfCards)
 </script>
 
 <template>
   <UApp>
     <UContainer as="main" class="p-2">
-      <h1>SOS p0p1</h1>
       <form>
-        <UCollapsible class="flex flex-col gap-2 w-full">
-          <UButton label="White Common" color="neutral" variant="subtle" block />
-          <p>Selected Card: {{ selectedWhiteCard }}</p>
-
-          <template #content>
-            <ul>
-              <li
-                :style="`background-image: url(${card.image_uris.art_crop});`"
-                class="w-full h-10 relative bg-cover my-2 rounded shadow-2xl"
-                v-for="card in whiteCards"
-                :key="card.name"
-                @click="selectedWhiteCard = card.name"
-              >
-                <div
-                  class="absolute w-full h-full bg-black/65 text-white font-bold flex items-center px-2"
-                >
-                  {{ card.name }}
-                </div>
-              </li>
-            </ul>
-          </template>
-        </UCollapsible>
+        <CardChoice
+          v-for="category in Object.values(mapOfCards)"
+          :key="category.label"
+          :label="category.label"
+          :cards="category.cards"
+          :selected-card="category.selected"
+          @select-card="(card) => (category.selected = card)"
+        />
       </form>
     </UContainer>
   </UApp>
