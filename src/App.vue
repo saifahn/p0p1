@@ -9,6 +9,10 @@ const cards = ref(cardData)
 
 const commonCards = computed(() => cards.value.filter((card) => card.rarity === 'common'))
 
+const commonUncommonCards = computed(() =>
+  cards.value.filter((card) => card.rarity === 'uncommon' || card.rarity === 'common'),
+)
+
 type MapOfCards = {
   [key: string]: {
     label: string
@@ -19,35 +23,70 @@ type MapOfCards = {
 
 type MtgColorCode = 'W' | 'U' | 'B' | 'R' | 'G'
 
-function isCardExactlyColor(card: Card, color: MtgColorCode) {
-  return card.colors.length === 1 && card.colors[0] == color
+function isCardExactlyColors(card: Card, colors: MtgColorCode[]) {
+  return (
+    card.colors.length === colors.length && colors.every((color) => card.colors.includes(color))
+  )
 }
 
 const mapOfCards = reactive({
   whiteCommons: {
     label: 'White Common',
     selected: ref(),
-    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColor(card, 'W'))),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['W']))),
   },
   blueCommons: {
     label: 'Blue Common',
     selected: ref(),
-    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColor(card, 'U'))),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['U']))),
   },
   blackCommons: {
     label: 'Black Common',
     selected: ref(),
-    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColor(card, 'B'))),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['B']))),
   },
   redCommons: {
     label: 'Red Common',
     selected: ref(),
-    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColor(card, 'R'))),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['R']))),
   },
   greenCommons: {
     label: 'Green Common',
     selected: ref(),
-    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColor(card, 'G'))),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['G']))),
+  },
+  wbCards: {
+    label: 'Silverquill Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'B'])),
+    ),
+  },
+  wrCards: {
+    label: 'Lorehold Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'R'])),
+    ),
+  },
+  urCards: {
+    label: 'Prismari Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'R'])),
+    ),
+  },
+  ugCards: {
+    label: 'Quandrix Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'G'])),
+    ),
+  },
+  gbCards: {
+    label: 'Witherbloom Card',
+    selected: ref(),
+    cards: computed(() => cards.value.filter((card) => isCardExactlyColors(card, ['B', 'G']))),
   },
 } satisfies MapOfCards)
 </script>
