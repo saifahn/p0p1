@@ -93,6 +93,8 @@ const mapOfCards = ref({
 
 const displayName = ref('')
 
+const isSubmitting = ref(false)
+
 const toast = useToast()
 
 function showSuccessToast() {
@@ -121,7 +123,9 @@ async function handleSubmit() {
     }
     selectedCardNames.push(category.selected.name)
   }
+  isSubmitting.value = true
   const result = await handleSubmission(displayName.value, selectedCardNames)
+  isSubmitting.value = false
   if (result === 'error-display-name-in-use') {
     showErrorToast('The display name is already in use. Please choose a different name.')
     return
@@ -136,7 +140,7 @@ async function handleSubmit() {
 
 <template>
   <UApp>
-    <UContainer as="main" class="p-2 max-w-xl">
+    <UContainer as="main" class="p-2 pb-12 max-w-xl">
       <UForm @submit.prevent="handleSubmit">
         <UFormField label="Display name" class="mb-4" required orientation="horizontal" size="xl">
           <UInput placeholder="Enter a name" v-model="displayName" />
@@ -150,7 +154,7 @@ async function handleSubmit() {
           :selected-card="category.selected"
           @select-card="(card) => (category.selected = card)"
         />
-        <UButton size="xl" block type="submit"> Submit </UButton>
+        <UButton :loading="isSubmitting" size="xl" block type="submit"> Submit </UButton>
       </UForm>
     </UContainer>
   </UApp>
