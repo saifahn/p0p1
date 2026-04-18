@@ -4,6 +4,8 @@ import { computed, reactive, toValue, type ComputedRef, type Ref } from 'vue'
 import cardData from './sets/SOS-slimmed.json'
 import { ref } from 'vue'
 import CardChoice, { type Card } from './components/CardChoice.vue'
+import { addDoc, doc, setDoc } from 'firebase/firestore'
+import { submissionsRef } from './firebase'
 
 const cards = ref(cardData)
 
@@ -90,15 +92,26 @@ const mapOfCards = ref({
   // },
 } satisfies MapOfCards)
 
-function handleSubmit() {
+const displayName = ref('')
+
+async function handleSubmit() {
   const selectedCardNames: string[] = []
   for (const category of Object.values(mapOfCards.value)) {
     if (!category.selected) {
       alert(`Please select a card for the category: ${category.label}`)
-      break
+      return
     }
     selectedCardNames.push(category.selected.name)
   }
+  try {
+    await setDoc(doc(submissionsRef, displayName.value), {
+      selectedCards: selectedCardNames,
+    })
+    console.log('Document successfully written!')
+  } catch (e) {
+    console.error('Error adding document: ', e)
+  }
+  console.log('Display Name:', displayName.value)
   console.log('Selected Cards:', toValue(selectedCardNames))
 }
 </script>
@@ -107,6 +120,9 @@ function handleSubmit() {
   <UApp>
     <UContainer as="main" class="p-2">
       <UForm @submit.prevent="handleSubmit">
+        <UFormField label="Display name">
+          <UInput placeholder="Enter a name" v-model="displayName" />
+        </UFormField>
         <CardChoice
           v-for="category in Object.values(mapOfCards)"
           :key="category.label"

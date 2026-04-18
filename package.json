@@ -16,8 +16,10 @@
   },
   "dependencies": {
     "@nuxt/ui": "^4.6.1",
+    "firebase": "^12.12.0",
     "tailwindcss": "^4.2.2",
-    "vue": "beta"
+    "vue": "beta",
+    "vuefire": "^3.2.3"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
@@ -55,5 +57,9 @@
     "@vue/server-renderer": "beta",
     "@vue/shared": "beta",
     "@vue/compat": "beta"
-  }
+  },
+  "trustedDependencies": [
+    "@firebase/util",
+    "protobufjs"
+  ]
 }
