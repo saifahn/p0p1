@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { computed, reactive, toValue, type ComputedRef, type Ref } from 'vue'
+import { computed, type ComputedRef, type Ref } from 'vue'
 
 import cardData from './sets/SOS-slimmed.json'
 import { ref } from 'vue'
 import CardChoice, { type Card } from './components/CardChoice.vue'
-import { addDoc, doc, setDoc } from 'firebase/firestore'
-import { submissionsRef } from './firebase'
+import { handleSubmission } from './handleSubmission'
 
 const cards = ref(cardData)
 
@@ -103,16 +102,7 @@ async function handleSubmit() {
     }
     selectedCardNames.push(category.selected.name)
   }
-  try {
-    await setDoc(doc(submissionsRef, displayName.value), {
-      selectedCards: selectedCardNames,
-    })
-    console.log('Document successfully written!')
-  } catch (e) {
-    console.error('Error adding document: ', e)
-  }
-  console.log('Display Name:', displayName.value)
-  console.log('Selected Cards:', toValue(selectedCardNames))
+  handleSubmission(displayName.value, selectedCardNames)
 }
 </script>
 
