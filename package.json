@@ -56,9 +56,5 @@
     "@vue/server-renderer": "beta",
     "@vue/shared": "beta",
     "@vue/compat": "beta"
-  },
-  "trustedDependencies": [
-    "@firebase/util",
-    "protobufjs"
-  ]
+  }
 }

@@ -31,10 +31,6 @@
       },
     },
   },
-  "trustedDependencies": [
-    "@firebase/util",
-    "protobufjs",
-  ],
   "overrides": {
     "@vue/compat": "beta",
     "@vue/compiler-core": "beta",
