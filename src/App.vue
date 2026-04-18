@@ -120,9 +120,10 @@ async function handleSubmit() {
   <UApp>
     <UContainer as="main" class="p-2 max-w-xl">
       <UForm @submit.prevent="handleSubmit">
-        <UFormField label="Display name">
+        <UFormField label="Display name" class="mb-4">
           <UInput placeholder="Enter a name" v-model="displayName" />
         </UFormField>
+
         <CardChoice
           v-for="category in Object.values(mapOfCards)"
           :key="category.label"
@@ -131,7 +132,7 @@ async function handleSubmit() {
           :selected-card="category.selected"
           @select-card="(card) => (category.selected = card)"
         />
-        <UButton type="submit"> Submit </UButton>
+        <UButton size="xl" block type="submit"> Submit </UButton>
       </UForm>
     </UContainer>
   </UApp>
