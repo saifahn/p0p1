@@ -118,7 +118,7 @@ async function handleSubmit() {
 
 <template>
   <UApp>
-    <UContainer as="main" class="p-2">
+    <UContainer as="main" class="p-2 max-w-xl">
       <UForm @submit.prevent="handleSubmit">
         <UFormField label="Display name">
           <UInput placeholder="Enter a name" v-model="displayName" />
