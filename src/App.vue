@@ -133,7 +133,7 @@ async function handleSubmit() {
   <UApp>
     <UContainer as="main" class="p-2 max-w-xl">
       <UForm @submit.prevent="handleSubmit">
-        <UFormField label="Display name" class="mb-4">
+        <UFormField label="Display name" class="mb-4" required orientation="horizontal" size="xl">
           <UInput placeholder="Enter a name" v-model="displayName" />
         </UFormField>
 

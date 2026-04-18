@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 export type Card = {
   name: string
@@ -21,7 +21,16 @@ const { selectedCard } = defineProps<{
   cards: Card[]
 }>()
 
-defineEmits<{ (e: 'select-card', card: Card): void }>()
+const emit = defineEmits<{
+  (e: 'select-card', card: Card): void
+}>()
+
+const open = ref(false)
+
+function handleCardSelect(card: Card) {
+  emit('select-card', card)
+  open.value = false
+}
 
 const buttonIcon = computed(() => {
   if (!selectedCard) {
@@ -34,7 +43,7 @@ const buttonColor = computed(() => (selectedCard ? 'success' : 'warning'))
 </script>
 
 <template>
-  <UCollapsible class="flex flex-col w-full mb-2">
+  <UCollapsible v-model:open="open" class="flex flex-col w-full mb-2">
     <div>
       <UButton :trailing-icon="buttonIcon" :color="buttonColor" variant="subtle" block size="xl">
         <p>{{ label }}: {{ selectedCard?.name ?? 'Select a card' }}</p>
@@ -48,7 +57,7 @@ const buttonColor = computed(() => (selectedCard ? 'success' : 'warning'))
           class="w-full h-10 relative bg-cover my-2 rounded shadow-2xl bg-position-[center_20%]"
           v-for="card in cards"
           :key="card.name"
-          @click="$emit('select-card', card)"
+          @click="handleCardSelect(card)"
         >
           <div
             class="absolute w-full h-full bg-black/55 text-white font-bold flex items-center px-2"
