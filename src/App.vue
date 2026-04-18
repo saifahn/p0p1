@@ -46,49 +46,49 @@ const mapOfCards = ref({
     selected: ref(),
     cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['B']))),
   },
-  // redCommons: {
-  //   label: 'Red Common',
-  //   selected: ref(),
-  //   cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['R']))),
-  // },
-  // greenCommons: {
-  //   label: 'Green Common',
-  //   selected: ref(),
-  //   cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['G']))),
-  // },
-  // wbCards: {
-  //   label: 'Silverquill Card',
-  //   selected: ref(),
-  //   cards: computed(() =>
-  //     commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'B'])),
-  //   ),
-  // },
-  // wrCards: {
-  //   label: 'Lorehold Card',
-  //   selected: ref(),
-  //   cards: computed(() =>
-  //     commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'R'])),
-  //   ),
-  // },
-  // urCards: {
-  //   label: 'Prismari Card',
-  //   selected: ref(),
-  //   cards: computed(() =>
-  //     commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'R'])),
-  //   ),
-  // },
-  // ugCards: {
-  //   label: 'Quandrix Card',
-  //   selected: ref(),
-  //   cards: computed(() =>
-  //     commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'G'])),
-  //   ),
-  // },
-  // gbCards: {
-  //   label: 'Witherbloom Card',
-  //   selected: ref(),
-  //   cards: computed(() => cards.value.filter((card) => isCardExactlyColors(card, ['B', 'G']))),
-  // },
+  redCommons: {
+    label: 'Red Common',
+    selected: ref(),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['R']))),
+  },
+  greenCommons: {
+    label: 'Green Common',
+    selected: ref(),
+    cards: computed(() => commonCards.value.filter((card) => isCardExactlyColors(card, ['G']))),
+  },
+  wbCards: {
+    label: 'Silverquill Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'B'])),
+    ),
+  },
+  wrCards: {
+    label: 'Lorehold Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['W', 'R'])),
+    ),
+  },
+  urCards: {
+    label: 'Prismari Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'R'])),
+    ),
+  },
+  ugCards: {
+    label: 'Quandrix Card',
+    selected: ref(),
+    cards: computed(() =>
+      commonUncommonCards.value.filter((card) => isCardExactlyColors(card, ['U', 'G'])),
+    ),
+  },
+  gbCards: {
+    label: 'Witherbloom Card',
+    selected: ref(),
+    cards: computed(() => cards.value.filter((card) => isCardExactlyColors(card, ['B', 'G']))),
+  },
 } satisfies MapOfCards)
 
 const displayName = ref('')
