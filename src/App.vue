@@ -93,16 +93,39 @@ const mapOfCards = ref({
 
 const displayName = ref('')
 
+const toast = useToast()
+
+function showSuccessToast() {
+  toast.add({ title: 'Your card choices were successfully submitted!', color: 'success' })
+}
+
+function showErrorToast(description: string) {
+  toast.add({
+    title: 'Uh oh! Something went wrong.',
+    description,
+    color: 'error',
+  })
+}
+
 async function handleSubmit() {
+  if (!displayName.value) {
+    showErrorToast('Please enter a display name.')
+    return
+  }
+
   const selectedCardNames: string[] = []
   for (const category of Object.values(mapOfCards.value)) {
     if (!category.selected) {
-      alert(`Please select a card for the category: ${category.label}`)
+      showErrorToast('Please select a card for each category before submitting.')
       return
     }
     selectedCardNames.push(category.selected.name)
   }
-  handleSubmission(displayName.value, selectedCardNames)
+  if (!(await handleSubmission(displayName.value, selectedCardNames))) {
+    showErrorToast('There was an error submitting your choices. Please try again later.')
+    return
+  }
+  showSuccessToast()
 }
 </script>
 

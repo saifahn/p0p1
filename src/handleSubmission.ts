@@ -6,11 +6,9 @@ export async function handleSubmission(name: string, selectedCardNames: string[]
     await setDoc(doc(submissionsRef, name), {
       selectedCards: selectedCardNames,
     })
-    console.log('Document successfully written!')
+    return true
   } catch (e) {
     console.error('Error adding document: ', e)
+    return false
   }
-
-  console.log('Display Name:', name)
-  console.log('Selected Cards:', selectedCardNames)
 }
