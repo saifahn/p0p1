@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { collection, getFirestore } from 'firebase/firestore'
+import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyCp3QAHxoI-YO6LnTkyfLOoR1PhO7f3Ck8',
@@ -12,6 +12,4 @@ const firebaseConfig = {
 }
 
 export const firebaseApp = initializeApp(firebaseConfig)
-const db = getFirestore(firebaseApp)
-
-export const submissionsRef = collection(db, 'submissions')
+export const db = getFirestore(firebaseApp)

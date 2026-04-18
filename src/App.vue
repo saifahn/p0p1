@@ -121,7 +121,12 @@ async function handleSubmit() {
     }
     selectedCardNames.push(category.selected.name)
   }
-  if (!(await handleSubmission(displayName.value, selectedCardNames))) {
+  const result = await handleSubmission(displayName.value, selectedCardNames)
+  if (result === 'error-display-name-in-use') {
+    showErrorToast('The display name is already in use. Please choose a different name.')
+    return
+  }
+  if (result === 'error-unknown') {
     showErrorToast('There was an error submitting your choices. Please try again later.')
     return
   }
