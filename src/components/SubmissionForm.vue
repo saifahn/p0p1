@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { reactive, toRef } from 'vue'
 import * as v from 'valibot'
 
 import CardChoice from './CardChoice.vue'
@@ -23,7 +23,7 @@ const state = reactive({
   displayName: '',
 })
 
-const { submit, isSubmitting } = useSubmission(state.displayName, mapOfCards)
+const { submit, isSubmitting } = useSubmission(toRef(state.displayName), mapOfCards)
 
 async function handleSubmit() {
   if (!state.displayName) {

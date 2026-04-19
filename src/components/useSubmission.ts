@@ -1,9 +1,9 @@
 import { useToasts } from '@/composables/useToasts'
 import type { MapOfCards } from './useCards'
-import { ref, toValue, type MaybeRefOrGetter, type Ref } from 'vue'
+import { ref, toValue, type Ref } from 'vue'
 import { handleSubmission } from '@/handleSubmission'
 
-export function useSubmission(displayName: MaybeRefOrGetter<string>, mapOfCards: Ref<MapOfCards>) {
+export function useSubmission(displayName: Ref<string>, mapOfCards: Ref<MapOfCards>) {
   const { showSuccessToast, showErrorToast } = useToasts()
 
   const isSubmitting = ref(false)
