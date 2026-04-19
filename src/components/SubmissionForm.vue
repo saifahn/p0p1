@@ -1,21 +1,50 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { reactive } from 'vue'
+import * as v from 'valibot'
 
 import CardChoice from './CardChoice.vue'
 import { useSubmission } from './useSubmission'
 import { useCards } from './useCards'
+import { useToasts } from '@/composables/useToasts'
 
 const { mapOfCards } = useCards()
+const { showErrorToast } = useToasts()
 
-const displayName = ref('')
+const schema = v.object({
+  displayName: v.pipe(
+    v.string(),
+    v.trim(),
+    v.excludes('/', 'Display name cannot contain slashes.'),
+    v.nonEmpty('Display name cannot be empty.'),
+    v.excludes('__', 'Display name cannot contain double underscores.'),
+  ),
+})
+const state = reactive({
+  displayName: '',
+})
 
-const { handleSubmit, isSubmitting } = useSubmission(displayName, mapOfCards)
+const { submit, isSubmitting } = useSubmission(state.displayName, mapOfCards)
+
+async function handleSubmit() {
+  if (!state.displayName) {
+    showErrorToast('Please enter a display name.')
+    return
+  }
+  await submit()
+}
 </script>
 
 <template>
-  <UForm @submit.prevent="handleSubmit">
-    <UFormField label="Display name" class="mb-4" required orientation="horizontal" size="xl">
-      <UInput placeholder="Enter a name" v-model="displayName" />
+  <UForm :schema :state @submit.prevent="handleSubmit">
+    <UFormField
+      label="Display name"
+      class="mb-4"
+      required
+      orientation="horizontal"
+      size="xl"
+      name="displayName"
+    >
+      <UInput placeholder="Enter a name" v-model="state.displayName" />
     </UFormField>
 
     <CardChoice

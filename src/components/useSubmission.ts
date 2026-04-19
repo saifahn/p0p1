@@ -3,17 +3,12 @@ import type { MapOfCards } from './useCards'
 import { ref, unref, type Ref } from 'vue'
 import { handleSubmission } from '@/handleSubmission'
 
-export function useSubmission(displayName: Ref<string>, mapOfCards: Ref<MapOfCards>) {
+export function useSubmission(displayName: string, mapOfCards: Ref<MapOfCards>) {
   const { showSuccessToast, showErrorToast } = useToasts()
 
   const isSubmitting = ref(false)
 
-  async function handleSubmit() {
-    if (!displayName.value) {
-      showErrorToast('Please enter a display name.')
-      return
-    }
-
+  async function submit() {
     const selectedCardNames: string[] = []
     for (const category of Object.values(mapOfCards.value)) {
       const selectedCard = unref(category.selected)
@@ -24,7 +19,7 @@ export function useSubmission(displayName: Ref<string>, mapOfCards: Ref<MapOfCar
       selectedCardNames.push(selectedCard.name)
     }
     isSubmitting.value = true
-    const result = await handleSubmission(displayName.value, selectedCardNames)
+    const result = await handleSubmission(displayName, selectedCardNames)
     isSubmitting.value = false
     if (result === 'error-display-name-in-use') {
       showErrorToast('The display name is already in use. Please choose a different name.')
@@ -37,5 +32,5 @@ export function useSubmission(displayName: Ref<string>, mapOfCards: Ref<MapOfCar
     showSuccessToast()
   }
 
-  return { handleSubmit, isSubmitting }
+  return { submit, isSubmitting }
 }
