@@ -1,5 +1,5 @@
 import { useToasts } from '@/composables/useToasts'
-import type { MapOfCards } from './SubmissionForm.vue'
+import type { MapOfCards } from './useCards'
 import { ref, unref, type Ref } from 'vue'
 import { handleSubmission } from '@/handleSubmission'
 
