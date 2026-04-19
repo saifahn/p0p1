@@ -1,7 +1,7 @@
 import { collection, doc, runTransaction } from 'firebase/firestore'
 import { db } from './firebase'
 
-const submissionsCollectionRef = collection(db, 'submissions')
+const submissionsCollectionRef = collection(db, 'submissions-sos')
 
 export class DisplayNameInUse extends Error {
   constructor(message: string) {
