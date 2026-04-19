@@ -71,6 +71,7 @@ function handleCardSelect(card: Card) {
           <button
             class="absolute w-full h-full bg-black/55 text-white font-bold flex items-center px-2 rounded"
             @click="openModalWithCard(card)"
+            type="button"
           >
             {{ card.name }}
           </button>
