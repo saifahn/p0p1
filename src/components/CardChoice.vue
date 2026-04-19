@@ -25,12 +25,7 @@ const emit = defineEmits<{
   (e: 'select-card', card: Card): void
 }>()
 
-const open = ref(false)
-
-function handleCardSelect(card: Card) {
-  emit('select-card', card)
-  open.value = false
-}
+const isCollapsibleOpen = ref(false)
 
 const buttonIcon = computed(() => {
   if (!selectedCard) {
@@ -40,15 +35,30 @@ const buttonIcon = computed(() => {
 })
 
 const buttonColor = computed(() => (selectedCard ? 'success' : 'warning'))
+
+const isModalOpen = ref(false)
+const cardForModal = ref<Card>()
+function openModalWithCard(card: Card) {
+  cardForModal.value = card
+  isModalOpen.value = true
+}
+function closeModal() {
+  cardForModal.value = undefined
+  isModalOpen.value = false
+}
+
+function handleCardSelect(card: Card) {
+  closeModal()
+  emit('select-card', card)
+  isCollapsibleOpen.value = false
+}
 </script>
 
 <template>
-  <UCollapsible v-model:open="open" class="flex flex-col w-full mb-2">
-    <div>
-      <UButton :trailing-icon="buttonIcon" :color="buttonColor" variant="subtle" block size="xl">
-        <p>{{ label }}: {{ selectedCard?.name ?? 'Select a card' }}</p>
-      </UButton>
-    </div>
+  <UCollapsible v-model:open="isCollapsibleOpen" class="flex flex-col w-full mb-2">
+    <UButton :trailing-icon="buttonIcon" :color="buttonColor" variant="subtle" block size="xl">
+      <p>{{ label }}: {{ selectedCard?.name ?? 'Select a card' }}</p>
+    </UButton>
 
     <template #content>
       <ul>
@@ -57,15 +67,33 @@ const buttonColor = computed(() => (selectedCard ? 'success' : 'warning'))
           class="w-full h-10 relative bg-cover my-2 rounded shadow-2xl bg-position-[center_20%]"
           v-for="card in cards"
           :key="card.name"
-          @click="handleCardSelect(card)"
         >
-          <div
-            class="absolute w-full h-full bg-black/55 text-white font-bold flex items-center px-2"
+          <button
+            class="absolute w-full h-full bg-black/55 text-white font-bold flex items-center px-2 rounded"
+            @click="openModalWithCard(card)"
+            type="button"
           >
             {{ card.name }}
-          </div>
+          </button>
         </li>
       </ul>
     </template>
   </UCollapsible>
+
+  <UModal :close="false" v-model:open="isModalOpen">
+    <template #body v-if="cardForModal">
+      <img
+        :src="cardForModal.image_uris.normal"
+        :alt="cardForModal.name"
+        class="w-full h-auto rounded"
+      />
+    </template>
+
+    <template #footer v-if="cardForModal">
+      <div class="flex gap-2 justify-end w-full">
+        <UButton variant="ghost" color="neutral" @click="closeModal" size="lg">Close</UButton>
+        <UButton color="primary" @click="handleCardSelect(cardForModal)" size="lg">Select</UButton>
+      </div>
+    </template>
+  </UModal>
 </template>
