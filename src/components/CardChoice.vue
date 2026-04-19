@@ -27,7 +27,8 @@ const emit = defineEmits<{
 
 const isCollapsibleOpen = ref(false)
 
-function handleCardSelect(card: Card) {
+function handleCardSelect(card?: Card) {
+  if (!card) throw new Error('No card provided for selection.')
   isModalOpen.value = false
   emit('select-card', card)
   isCollapsibleOpen.value = false
@@ -43,15 +44,22 @@ const buttonIcon = computed(() => {
 const buttonColor = computed(() => (selectedCard ? 'success' : 'warning'))
 
 const isModalOpen = ref(false)
+const cardForModal = ref<Card>()
+function openModalWithCard(card: Card) {
+  cardForModal.value = card
+  isModalOpen.value = true
+}
+function closeModal() {
+  cardForModal.value = undefined
+  isModalOpen.value = false
+}
 </script>
 
 <template>
   <UCollapsible v-model:open="isCollapsibleOpen" class="flex flex-col w-full mb-2">
-    <div>
-      <UButton :trailing-icon="buttonIcon" :color="buttonColor" variant="subtle" block size="xl">
-        <p>{{ label }}: {{ selectedCard?.name ?? 'Select a card' }}</p>
-      </UButton>
-    </div>
+    <UButton :trailing-icon="buttonIcon" :color="buttonColor" variant="subtle" block size="xl">
+      <p>{{ label }}: {{ selectedCard?.name ?? 'Select a card' }}</p>
+    </UButton>
 
     <template #content>
       <ul>
@@ -61,28 +69,31 @@ const isModalOpen = ref(false)
           v-for="card in cards"
           :key="card.name"
         >
-          <UModal :close="false" v-model:open="isModalOpen">
-            <div
-              class="absolute w-full h-full bg-black/55 text-white font-bold flex items-center px-2 rounded"
-            >
-              {{ card.name }}
-            </div>
-
-            <template #body>
-              <img :src="card.image_uris.normal" :alt="card.name" class="w-full h-auto rounded" />
-            </template>
-
-            <template #footer>
-              <div class="flex gap-2 justify-end w-full">
-                <UButton variant="ghost" color="neutral" @click="isModalOpen = false" size="lg"
-                  >Close</UButton
-                >
-                <UButton color="primary" @click="handleCardSelect(card)" size="lg">Select</UButton>
-              </div>
-            </template>
-          </UModal>
+          <button
+            class="absolute w-full h-full bg-black/55 text-white font-bold flex items-center px-2 rounded"
+            @click="openModalWithCard(card)"
+          >
+            {{ card.name }}
+          </button>
         </li>
       </ul>
     </template>
   </UCollapsible>
+
+  <UModal :close="false" v-model:open="isModalOpen">
+    <template #body>
+      <img
+        :src="cardForModal?.image_uris.normal"
+        :alt="cardForModal?.name"
+        class="w-full h-auto rounded"
+      />
+    </template>
+
+    <template #footer>
+      <div class="flex gap-2 justify-end w-full">
+        <UButton variant="ghost" color="neutral" @click="closeModal" size="lg">Close</UButton>
+        <UButton color="primary" @click="handleCardSelect(cardForModal)" size="lg">Select</UButton>
+      </div>
+    </template>
+  </UModal>
 </template>
