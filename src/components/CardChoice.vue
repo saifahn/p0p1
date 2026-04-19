@@ -27,13 +27,6 @@ const emit = defineEmits<{
 
 const isCollapsibleOpen = ref(false)
 
-function handleCardSelect(card?: Card) {
-  if (!card) throw new Error('No card provided for selection.')
-  isModalOpen.value = false
-  emit('select-card', card)
-  isCollapsibleOpen.value = false
-}
-
 const buttonIcon = computed(() => {
   if (!selectedCard) {
     return 'i-radix-icons:question-mark-circled'
@@ -52,6 +45,12 @@ function openModalWithCard(card: Card) {
 function closeModal() {
   cardForModal.value = undefined
   isModalOpen.value = false
+}
+
+function handleCardSelect(card: Card) {
+  closeModal()
+  emit('select-card', card)
+  isCollapsibleOpen.value = false
 }
 </script>
 
@@ -81,15 +80,15 @@ function closeModal() {
   </UCollapsible>
 
   <UModal :close="false" v-model:open="isModalOpen">
-    <template #body>
+    <template #body v-if="cardForModal">
       <img
-        :src="cardForModal?.image_uris.normal"
-        :alt="cardForModal?.name"
+        :src="cardForModal.image_uris.normal"
+        :alt="cardForModal.name"
         class="w-full h-auto rounded"
       />
     </template>
 
-    <template #footer>
+    <template #footer v-if="cardForModal">
       <div class="flex gap-2 justify-end w-full">
         <UButton variant="ghost" color="neutral" @click="closeModal" size="lg">Close</UButton>
         <UButton color="primary" @click="handleCardSelect(cardForModal)" size="lg">Select</UButton>
