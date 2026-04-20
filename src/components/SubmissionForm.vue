@@ -7,7 +7,7 @@ import { useSubmission } from './useSubmission'
 import { useCards } from './useCards'
 import { useToasts } from '@/composables/useToasts'
 
-const { mapOfCards, rareCards } = useCards()
+const { mapOfCards, mysticalArchiveCards } = useCards()
 const { showErrorToast } = useToasts()
 
 const schema = v.object({
@@ -63,8 +63,8 @@ async function handleSubmit() {
       @select-card="(card) => (category.selected = card)"
     />
     <CardChoice
-      label="Rare Tiebreaker"
-      :cards="rareCards"
+      label="Mystical Archive Tiebreaker"
+      :cards="mysticalArchiveCards"
       :selected-card="tiebreakerCard"
       @select-card="(card) => (tiebreakerCard = card)"
     />

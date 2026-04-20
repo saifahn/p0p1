@@ -41,6 +41,9 @@ function relative() {
       across your ten cards according to
       <ULink class="underline underline-offset-4" to="https://www.17lands.com">17Lands.com</ULink>
     </p>
+    <p class="mb-2">
+      You'll also pick a Mystical Archive card that will only be used in case of a tie.
+    </p>
     <p class="mb-4">
       The results will be announced after 17Lands releases their
       <ULink class="underline underline-offset-4" to="https://www.17lands.com/public_datasets"
