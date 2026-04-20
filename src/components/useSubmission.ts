@@ -2,8 +2,13 @@ import { useToasts } from '@/composables/useToasts'
 import type { MapOfCards } from './useCards'
 import { ref, toValue, type Ref } from 'vue'
 import { handleSubmission } from '@/handleSubmission'
+import type { Card } from './CardChoice.vue'
 
-export function useSubmission(displayName: Ref<string>, mapOfCards: Ref<MapOfCards>) {
+export function useSubmission(
+  displayName: Ref<string>,
+  mapOfCards: Ref<MapOfCards>,
+  tiebreaker: Ref<Card>,
+) {
   const { showSuccessToast, showErrorToast } = useToasts()
 
   const isSubmitting = ref(false)
@@ -18,8 +23,17 @@ export function useSubmission(displayName: Ref<string>, mapOfCards: Ref<MapOfCar
       }
       selectedCardNames.push(selectedCard.name)
     }
+    const tiebreakerCard = toValue(tiebreaker)
+    if (!tiebreakerCard) {
+      showErrorToast('Please select a card for each category before submitting.')
+      return
+    }
     isSubmitting.value = true
-    const result = await handleSubmission(toValue(displayName), selectedCardNames)
+    const result = await handleSubmission(
+      toValue(displayName),
+      selectedCardNames,
+      tiebreakerCard.name,
+    )
     isSubmitting.value = false
     if (result === 'error-display-name-in-use') {
       showErrorToast('The display name is already in use. Please choose a different name.')

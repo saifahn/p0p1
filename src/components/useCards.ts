@@ -1,4 +1,5 @@
 import cuCardData from '@/sets/SOS-commons-uncommons.json'
+import rareCardData from '@/sets/SOS-rares.json'
 import { computed, type Ref, type ComputedRef, ref } from 'vue'
 import type { Card } from './CardChoice.vue'
 
@@ -20,6 +21,7 @@ export type MapOfCards = {
 
 export function useCards() {
   const commonUncommonCards = ref(cuCardData)
+  const rareCards = ref(rareCardData)
 
   const commonCards = computed(() =>
     commonUncommonCards.value.filter((card) => card.rarity === 'common'),
@@ -88,5 +90,5 @@ export function useCards() {
     },
   } satisfies MapOfCards)
 
-  return { mapOfCards }
+  return { mapOfCards, rareCards }
 }
