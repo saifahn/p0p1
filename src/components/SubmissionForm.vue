@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { reactive, toRef } from 'vue'
+import { reactive, toRef, ref } from 'vue'
 import * as v from 'valibot'
 
-import CardChoice from './CardChoice.vue'
+import CardChoice, { type Card } from './CardChoice.vue'
 import { useSubmission } from './useSubmission'
 import { useCards } from './useCards'
 import { useToasts } from '@/composables/useToasts'
 
-const { mapOfCards } = useCards()
+const { mapOfCards, mysticalArchiveCards } = useCards()
 const { showErrorToast } = useToasts()
 
 const schema = v.object({
@@ -17,13 +17,20 @@ const schema = v.object({
     v.excludes('/', 'Display name cannot contain slashes.'),
     v.nonEmpty('Display name cannot be empty.'),
     v.excludes('__', 'Display name cannot contain double underscores.'),
+    v.excludes(' ', 'Display name cannot contain spaces.'),
   ),
 })
 const state = reactive({
   displayName: '',
 })
 
-const { submit, isSubmitting } = useSubmission(toRef(state.displayName), mapOfCards)
+const tiebreakerCard = ref<Card>()
+
+const { submit, isSubmitting } = useSubmission(
+  toRef(state, 'displayName'),
+  mapOfCards,
+  tiebreakerCard,
+)
 
 async function handleSubmit() {
   if (!state.displayName) {
@@ -54,6 +61,12 @@ async function handleSubmit() {
       :cards="category.cards"
       :selected-card="category.selected"
       @select-card="(card) => (category.selected = card)"
+    />
+    <CardChoice
+      label="Mystical Archive Tiebreaker"
+      :cards="mysticalArchiveCards"
+      :selected-card="tiebreakerCard"
+      @select-card="(card) => (tiebreakerCard = card)"
     />
     <UButton :loading="isSubmitting" size="xl" block type="submit"> Submit </UButton>
   </UForm>

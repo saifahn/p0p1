@@ -10,7 +10,11 @@ export class DisplayNameInUse extends Error {
   }
 }
 
-export async function handleSubmission(name: string, selectedCardNames: string[]) {
+export async function handleSubmission(
+  name: string,
+  selectedCardNames: string[],
+  tiebreakerName: string,
+) {
   const docRef = doc(submissionsCollectionRef, name)
 
   try {
@@ -19,7 +23,10 @@ export async function handleSubmission(name: string, selectedCardNames: string[]
       if (doc.exists()) {
         throw new DisplayNameInUse(`Display name "${name}" already exists.`)
       }
-      transaction.set(docRef, { selectedCards: selectedCardNames })
+      transaction.set(docRef, {
+        selectedCards: selectedCardNames,
+        tiebreaker: tiebreakerName,
+      })
     })
     return 'success'
   } catch (e) {

@@ -1,0 +1,1451 @@
+[
+  {
+    "name": "Abigale, Poet Laureate // Heroic Stanza",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/7/77285d12-e658-4eb3-ba13-ff202afab9c8.jpg?1775938164",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/7/77285d12-e658-4eb3-ba13-ff202afab9c8.jpg?1775938164"
+    }
+  },
+  {
+    "name": "Abstract Paintmage",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/a/ea008094-d995-4740-9b39-c61049356c55.jpg?1775938173",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/a/ea008094-d995-4740-9b39-c61049356c55.jpg?1775938173"
+    }
+  },
+  {
+    "name": "Adventurous Eater // Have a Bite",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/4/d40cc7da-c731-418e-8547-7033d1939450.jpg?1775937412",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/4/d40cc7da-c731-418e-8547-7033d1939450.jpg?1775937412"
+    }
+  },
+  {
+    "name": "Ajani's Response",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/9/c/9cd1417a-badc-4abd-a8ca-5b31f85c1072.jpg?1776047920",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/9/c/9cd1417a-badc-4abd-a8ca-5b31f85c1072.jpg?1776047920"
+    }
+  },
+  {
+    "name": "Ancestral Anger",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/6/c/6c5a93d6-d4ab-4062-bb3c-1b5330bf15ad.jpg?1775937666",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/6/c/6c5a93d6-d4ab-4062-bb3c-1b5330bf15ad.jpg?1775937666"
+    }
+  },
+  {
+    "name": "Ascendant Dustspeaker",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/e/de3de40b-a7ac-455e-add2-4e451b602d17.jpg?1776000359",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/e/de3de40b-a7ac-455e-add2-4e451b602d17.jpg?1776000359"
+    }
+  },
+  {
+    "name": "Banishing Betrayal",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/a/1ae9d2f3-7a9f-433a-aa1f-14337ae6f9d4.jpg?1775937176",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/a/1ae9d2f3-7a9f-433a-aa1f-14337ae6f9d4.jpg?1775937176"
+    }
+  },
+  {
+    "name": "Biblioplex Tomekeeper",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/b/f/bf2efdd9-d2b4-4bea-a5b9-dbb2eee4dfba.jpg?1775938724",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/b/f/bf2efdd9-d2b4-4bea-a5b9-dbb2eee4dfba.jpg?1775938724"
+    }
+  },
+  {
+    "name": "Bogwater Lumaret",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/a/7a42f51a-3377-47bb-b6fb-c0515bf1dcfb.jpg?1775938216",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/a/7a42f51a-3377-47bb-b6fb-c0515bf1dcfb.jpg?1775938216"
+    }
+  },
+  {
+    "name": "Borrowed Knowledge",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/3/a3226e14-554d-47c9-b8b6-dfeb53cc41ba.jpg?1775938224",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/3/a3226e14-554d-47c9-b8b6-dfeb53cc41ba.jpg?1775938224"
+    }
+  },
+  {
+    "name": "Burrog Banemaker",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/e/3e4f9d23-1a17-4188-ac91-f8ddea46a1c4.jpg?1775937433",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/e/3e4f9d23-1a17-4188-ac91-f8ddea46a1c4.jpg?1775937433"
+    }
+  },
+  {
+    "name": "Burrog Barrage",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/9/5/95d5b0a8-2b66-418e-9e5e-ecf7b304c31e.jpg?1775937957",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/9/5/95d5b0a8-2b66-418e-9e5e-ecf7b304c31e.jpg?1775937957"
+    }
+  },
+  {
+    "name": "Chase Inspiration",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/6/06f9f257-c7ef-44b7-8b2b-f038fba900af.jpg?1775937195",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/6/06f9f257-c7ef-44b7-8b2b-f038fba900af.jpg?1775937195"
+    }
+  },
+  {
+    "name": "Cheerful Osteomancer // Raise Dead",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/c/3c34660c-25e3-4ff5-9b2b-5554ded2bcc3.jpg?1775937441",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/c/3c34660c-25e3-4ff5-9b2b-5554ded2bcc3.jpg?1775937441"
+    }
+  },
+  {
+    "name": "Colossus of the Blood Age",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/b/f/bfa7f0a4-6b65-4e53-ba00-848df260d8e3.jpg?1775938248",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/b/f/bfa7f0a4-6b65-4e53-ba00-848df260d8e3.jpg?1775938248"
+    }
+  },
+  {
+    "name": "Cost of Brilliance",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/a/3a46816b-9f75-4c72-9ec6-cded6a4a0d01.jpg?1775937447",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/a/3a46816b-9f75-4c72-9ec6-cded6a4a0d01.jpg?1775937447"
+    }
+  },
+  {
+    "name": "Cuboid Colony",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/6/3/6384d135-7780-4d75-9e95-71bce506948e.jpg?1775938265",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/6/3/6384d135-7780-4d75-9e95-71bce506948e.jpg?1775938265"
+    }
+  },
+  {
+    "name": "Deluge Virtuoso",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/e/2e3b16ed-8727-48fd-8b1f-c0cbd329385e.jpg?1775937202",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/e/2e3b16ed-8727-48fd-8b1f-c0cbd329385e.jpg?1775937202"
+    }
+  },
+  {
+    "name": "Diary of Dreams",
+    "colors": [],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/e/ee1e0a96-af80-444e-a456-5b256cf60625.jpg?1775938731",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/e/ee1e0a96-af80-444e-a456-5b256cf60625.jpg?1775938731"
+    }
+  },
+  {
+    "name": "Dig Site Inventory",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/5/e52464ee-df8b-41ec-af93-4b0eb004383e.jpg?1775936980",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/5/e52464ee-df8b-41ec-af93-4b0eb004383e.jpg?1775936980"
+    }
+  },
+  {
+    "name": "Eager Glyphmage",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/b/f/bf736de9-9bc4-49df-ae60-672ed4f83f32.jpg?1775936986",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/b/f/bf736de9-9bc4-49df-ae60-672ed4f83f32.jpg?1775936986"
+    }
+  },
+  {
+    "name": "Efflorescence",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/9/79b9ace7-eceb-4f97-9ee7-d5ee3e0b3515.jpg?1775937979",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/9/79b9ace7-eceb-4f97-9ee7-d5ee3e0b3515.jpg?1775937979"
+    }
+  },
+  {
+    "name": "Elemental Mascot",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/5/c507eb1c-48e9-4d28-bb2d-71f2a9df9ab0.jpg?1775938280",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/5/c507eb1c-48e9-4d28-bb2d-71f2a9df9ab0.jpg?1775938280"
+    }
+  },
+  {
+    "name": "Elite Interceptor // Rejoinder",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/9/2970683e-e69c-42cb-a067-34abd56fb42b.jpg?1775936992",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/9/2970683e-e69c-42cb-a067-34abd56fb42b.jpg?1775936992"
+    }
+  },
+  {
+    "name": "Embrace the Paradox",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/0/c0cf5e0f-3668-46f2-850d-d91a538e8ead.jpg?1775938288",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/0/c0cf5e0f-3668-46f2-850d-d91a538e8ead.jpg?1775938288"
+    }
+  },
+  {
+    "name": "Essenceknit Scholar",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/a/2a3cba55-3fae-4d45-ae03-4d662ec13718.jpg?1775938295",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/a/2a3cba55-3fae-4d45-ae03-4d662ec13718.jpg?1775938295"
+    }
+  },
+  {
+    "name": "Essence Scatter",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/2/32840097-0531-4c43-b6a8-e76c17420b04.jpg?1775937236",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/2/32840097-0531-4c43-b6a8-e76c17420b04.jpg?1775937236"
+    }
+  },
+  {
+    "name": "Expressive Firedancer",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/5/259b8c45-6241-4206-a34e-34c7f401f47b.jpg?1775937734",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/5/259b8c45-6241-4206-a34e-34c7f401f47b.jpg?1775937734"
+    }
+  },
+  {
+    "name": "Fields of Strife",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/d/3dc7a4c3-c356-4fba-bea0-e8788da3eb57.jpg?1775938780",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/d/3dc7a4c3-c356-4fba-bea0-e8788da3eb57.jpg?1775938780"
+    }
+  },
+  {
+    "name": "Follow the Lumarets",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/f/9/f9488480-2b6c-40bc-a93e-29fb1292a2e4.jpg?1775938009",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/f/9/f9488480-2b6c-40bc-a93e-29fb1292a2e4.jpg?1775938009"
+    }
+  },
+  {
+    "name": "Forest",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/f/1/f169dfb2-e4c8-46e9-8591-e51bb82da082.jpg?1775938964",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/f/1/f169dfb2-e4c8-46e9-8591-e51bb82da082.jpg?1775938964"
+    }
+  },
+  {
+    "name": "Forum of Amity",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/d/1de6c6cc-0c55-4997-8623-d7f796bd9ab8.jpg?1775938787",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/d/1de6c6cc-0c55-4997-8623-d7f796bd9ab8.jpg?1775938787"
+    }
+  },
+  {
+    "name": "Fractal Mascot",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/f/cf5b19e3-eed1-4b36-9756-660ffb3baa08.jpg?1775938311",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/f/cf5b19e3-eed1-4b36-9756-660ffb3baa08.jpg?1775938311"
+    }
+  },
+  {
+    "name": "Fractal Tender",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/a/ea7f5262-4ddb-410a-be72-4bac6af9b4ec.jpg?1775938318",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/a/ea7f5262-4ddb-410a-be72-4bac6af9b4ec.jpg?1775938318"
+    }
+  },
+  {
+    "name": "Glorious Decay",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/3/a335f396-1004-4fee-842a-a35ff6ba17f2.jpg?1775938023",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/3/a335f396-1004-4fee-842a-a35ff6ba17f2.jpg?1775938023"
+    }
+  },
+  {
+    "name": "Goblin Glasswright // Craft with Pride",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/8/c85c5f06-dd31-4e2c-97be-2f64d65069ea.jpg?1775937759",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/8/c85c5f06-dd31-4e2c-97be-2f64d65069ea.jpg?1775937759"
+    }
+  },
+  {
+    "name": "Grapple with Death",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/6/2/62842fb4-8bd3-4d80-b4f9-5bc3c5cebd3a.jpg?1775938332",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/6/2/62842fb4-8bd3-4d80-b4f9-5bc3c5cebd3a.jpg?1775938332"
+    }
+  },
+  {
+    "name": "Growth Curve",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/6/1675a445-86ae-413b-b95a-a1c254a7f252.jpg?1775938339",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/6/1675a445-86ae-413b-b95a-a1c254a7f252.jpg?1775938339"
+    }
+  },
+  {
+    "name": "Heated Argument",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/0/0038d212-3d95-4f98-8c2e-7b2404d0ced7.jpg?1775937767",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/0/0038d212-3d95-4f98-8c2e-7b2404d0ced7.jpg?1775937767"
+    }
+  },
+  {
+    "name": "Honorbound Page // Forum's Favor",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/9/79a70863-860f-4a7b-9cb2-d3546b689d44.jpg?1775937039",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/9/79a70863-860f-4a7b-9cb2-d3546b689d44.jpg?1775937039"
+    }
+  },
+  {
+    "name": "Hungry Graffalon",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/3/030b1272-5990-4bc9-8fc1-82cc05602060.jpg?1775938030",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/3/030b1272-5990-4bc9-8fc1-82cc05602060.jpg?1775938030"
+    }
+  },
+  {
+    "name": "Hydro-Channeler",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/9/099f8400-d70a-48ef-8ff6-645eae97e072.jpg?1775937286",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/9/099f8400-d70a-48ef-8ff6-645eae97e072.jpg?1775937286"
+    }
+  },
+  {
+    "name": "Imperious Inkmage",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/5/d5df1c3f-2536-4476-b8cd-34b026c38366.jpg?1775938353",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/5/d5df1c3f-2536-4476-b8cd-34b026c38366.jpg?1775938353"
+    }
+  },
+  {
+    "name": "Inkling Mascot",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/6/d/6d4a2f39-0e1e-4076-815a-2676a09a1aab.jpg?1775938360",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/6/d/6d4a2f39-0e1e-4076-815a-2676a09a1aab.jpg?1775938360"
+    }
+  },
+  {
+    "name": "Interjection",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/5/0534cff6-299c-4155-b318-eb7581989e8a.jpg?1775937061",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/5/0534cff6-299c-4155-b318-eb7581989e8a.jpg?1775937061"
+    }
+  },
+  {
+    "name": "Island",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/7/77b88bb8-6bd9-4632-b937-89468fcb5e6a.jpg?1775938923",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/7/77b88bb8-6bd9-4632-b937-89468fcb5e6a.jpg?1775938923"
+    }
+  },
+  {
+    "name": "Killian's Confidence",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/5/5/55ff776a-fc3b-4338-8864-d57a85b3f123.jpg?1775938369",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/5/5/55ff776a-fc3b-4338-8864-d57a85b3f123.jpg?1775938369"
+    }
+  },
+  {
+    "name": "Kirol, History Buff // Pack a Punch",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/6/7/676ba521-66e4-42cf-a315-70d03cb7334e.jpg?1775938375",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/6/7/676ba521-66e4-42cf-a315-70d03cb7334e.jpg?1775938375"
+    }
+  },
+  {
+    "name": "Landscape Painter // Vibrant Idea",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/0/c0bd30c4-3cdf-4eda-8be5-0fb5e5ddddbf.jpg?1775937300",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/0/c0bd30c4-3cdf-4eda-8be5-0fb5e5ddddbf.jpg?1775937300"
+    }
+  },
+  {
+    "name": "Last Gasp",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/a/da5f3729-6ec7-4482-90cb-83b973edeae4.jpg?1775937510",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/a/da5f3729-6ec7-4482-90cb-83b973edeae4.jpg?1775937510"
+    }
+  },
+  {
+    "name": "Lluwen, Exchange Student // Pest Friend",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/0/a0bcb638-c3c8-4973-9537-5c471f43f34f.jpg?1775938382",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/0/a0bcb638-c3c8-4973-9537-5c471f43f34f.jpg?1775938382"
+    }
+  },
+  {
+    "name": "Lorehold Charm",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/5/f/5fe70295-e550-4577-a341-dab6c25aabfd.jpg?1775938389",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/5/f/5fe70295-e550-4577-a341-dab6c25aabfd.jpg?1775938389"
+    }
+  },
+  {
+    "name": "Mage Tower Referee",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/c/1ceb704a-97a8-49f9-b799-30f001404144.jpg?1775938737",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/c/1ceb704a-97a8-49f9-b799-30f001404144.jpg?1775938737"
+    }
+  },
+  {
+    "name": "Masterful Flourish",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/8/d/8d93d14d-7760-4af2-a237-2df326dd28d3.jpg?1775937531",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/8/d/8d93d14d-7760-4af2-a237-2df326dd28d3.jpg?1775937531"
+    }
+  },
+  {
+    "name": "Melancholic Poet",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/8/d8309815-7035-47a5-acf2-2b2ac1e65037.jpg?1775937538",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/8/d8309815-7035-47a5-acf2-2b2ac1e65037.jpg?1775937538"
+    }
+  },
+  {
+    "name": "Mindful Biomancer",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/c/2c3a6eb8-ce0c-4dc8-9ed6-d2a9223eef53.jpg?1775938052",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/c/2c3a6eb8-ce0c-4dc8-9ed6-d2a9223eef53.jpg?1775938052"
+    }
+  },
+  {
+    "name": "Mind Roots",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/9/d/9d5fdbda-ebbe-45d6-a668-5ddee057a063.jpg?1775938410",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/9/d/9d5fdbda-ebbe-45d6-a668-5ddee057a063.jpg?1775938410"
+    }
+  },
+  {
+    "name": "Molten Note",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/5/0/506f69aa-7dc4-4dd7-990a-7371fc1762c0.jpg?1775938416",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/5/0/506f69aa-7dc4-4dd7-990a-7371fc1762c0.jpg?1775938416"
+    }
+  },
+  {
+    "name": "Mountain",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/6/a642c7b1-d4d1-4125-a66d-560438e5ee51.jpg?1775938951",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/6/a642c7b1-d4d1-4125-a66d-560438e5ee51.jpg?1775938951"
+    }
+  },
+  {
+    "name": "Muse's Encouragement",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/5/c59e0004-1d6a-42a1-8ce4-31da2af2e1bf.jpg?1775937336",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/5/c59e0004-1d6a-42a1-8ce4-31da2af2e1bf.jpg?1775937336"
+    }
+  },
+  {
+    "name": "Noxious Newt",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/a/3a028306-c5d7-4f8f-b6f4-0d103fd47000.jpg?1775938060",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/a/3a028306-c5d7-4f8f-b6f4-0d103fd47000.jpg?1775938060"
+    }
+  },
+  {
+    "name": "Old-Growth Educator",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/b/eb7e858a-9b85-49b2-a379-ee656b64935a.jpg?1775938438",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/b/eb7e858a-9b85-49b2-a379-ee656b64935a.jpg?1775938438"
+    }
+  },
+  {
+    "name": "Oracle's Restoration",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/8/0863a19d-4511-4a78-98dd-d194afd1c39b.jpg?1775938067",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/8/0863a19d-4511-4a78-98dd-d194afd1c39b.jpg?1775938067"
+    }
+  },
+  {
+    "name": "Owlin Historian",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/5/f/5fe99be0-e1ec-485e-82f8-02eba7b82441.jpg?1775937078",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/5/f/5fe99be0-e1ec-485e-82f8-02eba7b82441.jpg?1775937078"
+    }
+  },
+  {
+    "name": "Page, Loose Leaf",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/8/c/8c6fecfd-8241-4cf0-b1eb-19472b99e0ed.jpg?1775938744",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/8/c/8c6fecfd-8241-4cf0-b1eb-19472b99e0ed.jpg?1775938744"
+    }
+  },
+  {
+    "name": "Paradox Gardens",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/b/dbc3447e-1329-4ea1-b4ca-b321b0ffec8f.jpg?1775938801",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/b/dbc3447e-1329-4ea1-b4ca-b321b0ffec8f.jpg?1775938801"
+    }
+  },
+  {
+    "name": "Paradox Surveyor",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/7/d7cb1af2-0302-46ff-8303-ae9d07541a01.jpg?1775938445",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/7/d7cb1af2-0302-46ff-8303-ae9d07541a01.jpg?1775938445"
+    }
+  },
+  {
+    "name": "Pest Mascot",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/8/d882beb9-6766-4818-afbb-f6fd7a2d5b70.jpg?1775938452",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/8/d882beb9-6766-4818-afbb-f6fd7a2d5b70.jpg?1775938452"
+    }
+  },
+  {
+    "name": "Plains",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/8/d85d0f25-a24a-4de0-9b8b-93fb5017bce9.jpg?1775938910",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/8/d85d0f25-a24a-4de0-9b8b-93fb5017bce9.jpg?1775938910"
+    }
+  },
+  {
+    "name": "Potioner's Trove",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/1/2123b349-4649-4a15-a8b5-b54414d2b1b7.jpg?1775938752",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/1/2123b349-4649-4a15-a8b5-b54414d2b1b7.jpg?1775938752"
+    }
+  },
+  {
+    "name": "Practiced Scrollsmith",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/4/0/40075e3f-58b3-47fd-8fbe-4b301e9ce7a1.jpg?1775938459",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/4/0/40075e3f-58b3-47fd-8fbe-4b301e9ce7a1.jpg?1775938459"
+    }
+  },
+  {
+    "name": "Prismari Charm",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/8/f/8f6c2a5e-fe13-407c-aadd-c9caf2884ff1.jpg?1775938465",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/8/f/8f6c2a5e-fe13-407c-aadd-c9caf2884ff1.jpg?1775938465"
+    }
+  },
+  {
+    "name": "Procrastinate",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/e/1edb449d-620f-4e21-9d76-2c840635eb9d.jpg?1775937356",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/e/1edb449d-620f-4e21-9d76-2c840635eb9d.jpg?1775937356"
+    }
+  },
+  {
+    "name": "Proctor's Gaze",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/b/1/b127d543-0a90-4af6-9410-94d5cd30389e.jpg?1775938479",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/b/1/b127d543-0a90-4af6-9410-94d5cd30389e.jpg?1775938479"
+    }
+  },
+  {
+    "name": "Pterafractyl",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/c/ecd33152-e290-4505-addd-a8d08cefdddd.jpg?1775938495",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/c/ecd33152-e290-4505-addd-a8d08cefdddd.jpg?1775938495"
+    }
+  },
+  {
+    "name": "Pull from the Grave",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/7/d73612fe-8992-4650-a7e3-c7b662da6a03.jpg?1775937572",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/7/d73612fe-8992-4650-a7e3-c7b662da6a03.jpg?1775937572"
+    }
+  },
+  {
+    "name": "Pursue the Past",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/4/5/4584d5f7-b1f1-4c8e-80c5-ad35e44a968e.jpg?1775938502",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/4/5/4584d5f7-b1f1-4c8e-80c5-ad35e44a968e.jpg?1775938502"
+    }
+  },
+  {
+    "name": "Quandrix Charm",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/1/318486e0-f255-40f5-8150-dc272eec9d7d.jpg?1775938509",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/1/318486e0-f255-40f5-8150-dc272eec9d7d.jpg?1775938509"
+    }
+  },
+  {
+    "name": "Quick Study",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/d/2d4f0bc7-da7c-4749-a24c-b01f3eb5860c.jpg?1775937363",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/d/2d4f0bc7-da7c-4749-a24c-b01f3eb5860c.jpg?1775937363"
+    }
+  },
+  {
+    "name": "Rancorous Archaic",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/5/2565e16a-ed31-4867-adb8-f1633d580397.jpg?1775936927",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/5/2565e16a-ed31-4867-adb8-f1633d580397.jpg?1775936927"
+    }
+  },
+  {
+    "name": "Rapier Wit",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/9/7/97b50521-5a0f-4dbd-8e15-f0f0d059c258.jpg?1775937109",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/9/7/97b50521-5a0f-4dbd-8e15-f0f0d059c258.jpg?1775937109"
+    }
+  },
+  {
+    "name": "Rapturous Moment",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/1/21afe19d-881a-48cb-863e-22942bea5ebe.jpg?1775938524",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/1/21afe19d-881a-48cb-863e-22942bea5ebe.jpg?1775938524"
+    }
+  },
+  {
+    "name": "Rearing Embermare",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/6/06dd56bd-de92-4202-af31-7e881c34d799.jpg?1775937851",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/6/06dd56bd-de92-4202-af31-7e881c34d799.jpg?1775937851"
+    }
+  },
+  {
+    "name": "Rehearsed Debater",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/f/c/fc6a1425-6733-42a2-94d9-605966398092.jpg?1775937116",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/f/c/fc6a1425-6733-42a2-94d9-605966398092.jpg?1775937116"
+    }
+  },
+  {
+    "name": "Render Speechless",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/5/25bbb1c7-14e8-444f-ab98-e95f50927460.jpg?1775938531",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/5/25bbb1c7-14e8-444f-ab98-e95f50927460.jpg?1775938531"
+    }
+  },
+  {
+    "name": "Root Manipulation",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/5/3/5390a79c-bc4b-4edb-a845-0d3514986401.jpg?1775938546",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/5/3/5390a79c-bc4b-4edb-a845-0d3514986401.jpg?1775938546"
+    }
+  },
+  {
+    "name": "Rubble Rouser",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/f/afe61957-a9bb-42b0-98e8-b5fa418cbaff.jpg?1775937860",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/f/afe61957-a9bb-42b0-98e8-b5fa418cbaff.jpg?1775937860"
+    }
+  },
+  {
+    "name": "Run Behind",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/4/0/40ecc34b-4cd0-4998-bbf4-7faa6fd3d7e0.jpg?1775937369",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/4/0/40ecc34b-4cd0-4998-bbf4-7faa6fd3d7e0.jpg?1775937369"
+    }
+  },
+  {
+    "name": "Sanar, Unfinished Genius // Wild Idea",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/7/173157aa-712d-44f2-89ba-dd2511a07f26.jpg?1775938553",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/7/173157aa-712d-44f2-89ba-dd2511a07f26.jpg?1775938553"
+    }
+  },
+  {
+    "name": "Scolding Administrator",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/6/9/69757177-aefa-44a6-81db-5ae9b5d2f117.jpg?1775938562",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/6/9/69757177-aefa-44a6-81db-5ae9b5d2f117.jpg?1775938562"
+    }
+  },
+  {
+    "name": "Seize the Spoils",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/4/d/4ddf4e34-a1f9-4636-942d-0a08e9f94320.jpg?1775937868",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/4/d/4ddf4e34-a1f9-4636-942d-0a08e9f94320.jpg?1775937868"
+    }
+  },
+  {
+    "name": "Send in the Pest",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/8/283b508b-89f0-4c23-9686-b049e402b73c.jpg?1775937607",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/8/283b508b-89f0-4c23-9686-b049e402b73c.jpg?1775937607"
+    }
+  },
+  {
+    "name": "Shattered Acolyte",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/d/c/dc0517ca-b271-49a1-a286-c20f4e5b9309.jpg?1775937130",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/d/c/dc0517ca-b271-49a1-a286-c20f4e5b9309.jpg?1775937130"
+    }
+  },
+  {
+    "name": "Shopkeeper's Bane",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/9/7/97f7fbb9-228c-4a74-975b-38d3b6cecb32.jpg?1775938087",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/9/7/97f7fbb9-228c-4a74-975b-38d3b6cecb32.jpg?1775938087"
+    }
+  },
+  {
+    "name": "Silverquill Charm",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/e/3eb73579-f1c6-4762-81d2-9568ab501fac.jpg?1775938570",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/e/3eb73579-f1c6-4762-81d2-9568ab501fac.jpg?1775938570"
+    }
+  },
+  {
+    "name": "Skycoach Waypoint",
+    "colors": [],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/6/7/6747657b-5ce4-4dbd-b924-ca1f7119faf7.jpg?1775938823",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/6/7/6747657b-5ce4-4dbd-b924-ca1f7119faf7.jpg?1775938823"
+    }
+  },
+  {
+    "name": "Sneering Shadewriter",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/4/b/4b4c120e-abe9-4f11-a7e4-bc3f723da4b2.jpg?1775937615",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/4/b/4b4c120e-abe9-4f11-a7e4-bc3f723da4b2.jpg?1775937615"
+    }
+  },
+  {
+    "name": "Snooping Page",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/3/73d06987-8686-461b-b260-9a4fee6a3b32.jpg?1775938584",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/3/73d06987-8686-461b-b260-9a4fee6a3b32.jpg?1775938584"
+    }
+  },
+  {
+    "name": "Social Snub",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/0/a04b6900-0436-4920-a0d4-c0186d605ae3.jpg?1775938590",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/0/a04b6900-0436-4920-a0d4-c0186d605ae3.jpg?1775938590"
+    }
+  },
+  {
+    "name": "Spectacle Summit",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/0/a0a66f7b-eab4-45da-8895-c2c2c7eb05f8.jpg?1775938830",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/0/a0a66f7b-eab4-45da-8895-c2c2c7eb05f8.jpg?1775938830"
+    }
+  },
+  {
+    "name": "Spectacular Skywhale",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/9/c90366d5-b4ba-4772-a3c5-f138bbe7f305.jpg?1775938597",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/9/c90366d5-b4ba-4772-a3c5-f138bbe7f305.jpg?1775938597"
+    }
+  },
+  {
+    "name": "Spellbook Seeker // Careful Study",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/c/cc44eaa4-59a4-419e-b1d1-d92f354ff588.jpg?1775937383",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/c/cc44eaa4-59a4-419e-b1d1-d92f354ff588.jpg?1775937383"
+    }
+  },
+  {
+    "name": "Spirit Mascot",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/2/123f1fde-d8de-4640-baa1-bb3781713168.jpg?1775938605",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/2/123f1fde-d8de-4640-baa1-bb3781713168.jpg?1775938605"
+    }
+  },
+  {
+    "name": "Stadium Tidalmage",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/6/a689289e-7141-4950-8a87-82e9bd6846fe.jpg?1775938619",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/6/a689289e-7141-4950-8a87-82e9bd6846fe.jpg?1775938619"
+    }
+  },
+  {
+    "name": "Startled Relic Sloth",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/f/1/f143fd41-58c3-45a0-bef8-e9e4b4a502a5.jpg?1775938628",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/f/1/f143fd41-58c3-45a0-bef8-e9e4b4a502a5.jpg?1775938628"
+    }
+  },
+  {
+    "name": "Stirring Honormancer",
+    "colors": [
+      "B",
+      "W"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/e/ee84b04d-78fc-416f-9166-72e5417c3e17.jpg?1775938634",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/e/ee84b04d-78fc-416f-9166-72e5417c3e17.jpg?1775938634"
+    }
+  },
+  {
+    "name": "Stone Docent",
+    "colors": [
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/2/c2abfffb-bf36-44af-9a27-6e109e4d77dd.jpg?1775937164",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/2/c2abfffb-bf36-44af-9a27-6e109e4d77dd.jpg?1775937164"
+    }
+  },
+  {
+    "name": "Stress Dream",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/e/1ec40a1b-51e7-4a35-966c-ab2a10f21a80.jpg?1775938641",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/e/1ec40a1b-51e7-4a35-966c-ab2a10f21a80.jpg?1775938641"
+    }
+  },
+  {
+    "name": "Strife Scholar // Awaken the Ages",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/8/d/8de79312-2046-425e-9919-49afe19be81b.jpg?1775937883",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/8/d/8de79312-2046-425e-9919-49afe19be81b.jpg?1775937883"
+    }
+  },
+  {
+    "name": "Strixhaven Skycoach",
+    "colors": [],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/8/7/87741fbb-b426-4f83-a358-587b0907f081.jpg?1775938759",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/8/7/87741fbb-b426-4f83-a358-587b0907f081.jpg?1775938759"
+    }
+  },
+  {
+    "name": "Studious First-Year // Rampant Growth",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/4/24f888dd-785c-4089-a89c-03f9080130ed.jpg?1775938109",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/4/24f888dd-785c-4089-a89c-03f9080130ed.jpg?1775938109"
+    }
+  },
+  {
+    "name": "Sundering Archaic",
+    "colors": [],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/3/c35b57e4-2358-46c0-8f09-cd27c10eaf2d.jpg?1775936933",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/3/c35b57e4-2358-46c0-8f09-cd27c10eaf2d.jpg?1775936933"
+    }
+  },
+  {
+    "name": "Swamp",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/5/1/51fe930f-2b5a-4b1e-9007-6ee74fb44715.jpg?1775938936",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/5/1/51fe930f-2b5a-4b1e-9007-6ee74fb44715.jpg?1775938936"
+    }
+  },
+  {
+    "name": "Tackle Artist",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/b/8/b87e2474-98c1-4c1a-91ed-340b72d31653.jpg?1775937898",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/b/8/b87e2474-98c1-4c1a-91ed-340b72d31653.jpg?1775937898"
+    }
+  },
+  {
+    "name": "Tam, Observant Sequencer // Deep Sight",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/1/7120e71b-2976-451b-89a7-a1665dc6fb6b.jpg?1775938655",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/1/7120e71b-2976-451b-89a7-a1665dc6fb6b.jpg?1775938655"
+    }
+  },
+  {
+    "name": "Teacher's Pest",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/e/a/eaa358ac-761d-4507-aa15-3d4684027207.jpg?1775938661",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/e/a/eaa358ac-761d-4507-aa15-3d4684027207.jpg?1775938661"
+    }
+  },
+  {
+    "name": "Tenured Concocter",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/7/376c8b7d-1c90-47e1-bd01-e4c67f3fc4fc.jpg?1775938116",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/7/376c8b7d-1c90-47e1-bd01-e4c67f3fc4fc.jpg?1775938116"
+    }
+  },
+  {
+    "name": "Terramorphic Expanse",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/9/a/9a4c5629-fadd-42b9-850f-9f8586a2ca50.jpg?1775938853",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/9/a/9a4c5629-fadd-42b9-850f-9f8586a2ca50.jpg?1775938853"
+    }
+  },
+  {
+    "name": "Textbook Tabulator",
+    "colors": [
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/5/6/56f54fee-b48d-4582-8982-ca4c7b8ef553.jpg?1776000387",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/5/6/56f54fee-b48d-4582-8982-ca4c7b8ef553.jpg?1776000387"
+    }
+  },
+  {
+    "name": "Titan's Grave",
+    "colors": [],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/a/9/a9ab41c8-3ee2-4676-9b8b-20c34d9f5f21.jpg?1775938861",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/a/9/a9ab41c8-3ee2-4676-9b8b-20c34d9f5f21.jpg?1775938861"
+    }
+  },
+  {
+    "name": "Tome Blast",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/7/2/72a3b17d-1e00-48e9-8402-c81bacd595a7.jpg?1775937914",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/7/2/72a3b17d-1e00-48e9-8402-c81bacd595a7.jpg?1775937914"
+    }
+  },
+  {
+    "name": "Transcendent Archaic",
+    "colors": [],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/1/6/1624c680-502b-474a-b9b2-888fe3ca008c.jpg?1775936948",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/1/6/1624c680-502b-474a-b9b2-888fe3ca008c.jpg?1775936948"
+    }
+  },
+  {
+    "name": "Ulna Alley Shopkeep",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/c/2/c25e1ae5-f17c-4eee-98f1-5681981af31c.jpg?1775937633",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/c/2/c25e1ae5-f17c-4eee-98f1-5681981af31c.jpg?1775937633"
+    }
+  },
+  {
+    "name": "Unsubtle Mockery",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/b/2b7cb1a3-761e-470e-a164-6e29dd9448cd.jpg?1775937921",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/b/2b7cb1a3-761e-470e-a164-6e29dd9448cd.jpg?1775937921"
+    }
+  },
+  {
+    "name": "Vibrant Outburst",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/f/9/f9ba68ef-6efc-4249-8b74-e33f47173902.jpg?1775938674",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/f/9/f9ba68ef-6efc-4249-8b74-e33f47173902.jpg?1775938674"
+    }
+  },
+  {
+    "name": "Visionary's Dance",
+    "colors": [
+      "R",
+      "U"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/8/4/846a0e79-a530-429e-8f7f-4b87f1b0156e.jpg?1776000377",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/8/4/846a0e79-a530-429e-8f7f-4b87f1b0156e.jpg?1776000377"
+    }
+  },
+  {
+    "name": "Wander Off",
+    "colors": [
+      "B"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/d/3d409512-50b9-4a38-91b0-19ba25227992.jpg?1775937643",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/d/3d409512-50b9-4a38-91b0-19ba25227992.jpg?1775937643"
+    }
+  },
+  {
+    "name": "Wild Hypothesis",
+    "colors": [
+      "G"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/0/4/04fdfabc-c247-4384-a5bb-f49035f8aae0.jpg?1775938142",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/0/4/04fdfabc-c247-4384-a5bb-f49035f8aae0.jpg?1775938142"
+    }
+  },
+  {
+    "name": "Wilt in the Heat",
+    "colors": [
+      "R",
+      "W"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/f/6/f63f7209-fc0f-400c-8076-125f3131cb32.jpg?1775938697",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/f/6/f63f7209-fc0f-400c-8076-125f3131cb32.jpg?1775938697"
+    }
+  },
+  {
+    "name": "Witherbloom Charm",
+    "colors": [
+      "B",
+      "G"
+    ],
+    "rarity": "uncommon",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/2/5/254437f7-7a8a-4b11-9cea-e8e7ea23c59e.jpg?1775938703",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/2/5/254437f7-7a8a-4b11-9cea-e8e7ea23c59e.jpg?1775938703"
+    }
+  },
+  {
+    "name": "Zealous Lorecaster",
+    "colors": [
+      "R"
+    ],
+    "rarity": "common",
+    "image_uris": {
+      "normal": "https://cards.scryfall.io/normal/front/3/6/36ab2130-9f21-4d30-873a-aa72d3d15fa8.jpg?1775937928",
+      "art_crop": "https://cards.scryfall.io/art_crop/front/3/6/36ab2130-9f21-4d30-873a-aa72d3d15fa8.jpg?1775937928"
+    }
+  }
+]
