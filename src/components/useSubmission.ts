@@ -8,8 +8,9 @@ export function useSubmission(
   displayName: Ref<string>,
   mapOfCards: Ref<MapOfCards>,
   tiebreaker: Ref<Card>,
+  onSuccess: () => void,
 ) {
-  const { showSuccessToast, showErrorToast } = useToasts()
+  const { showErrorToast } = useToasts()
 
   const isSubmitting = ref(false)
 
@@ -43,7 +44,7 @@ export function useSubmission(
       showErrorToast('There was an error submitting your choices. Please try again later.')
       return
     }
-    showSuccessToast()
+    onSuccess()
   }
 
   return { submit, isSubmitting }

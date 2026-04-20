@@ -3,12 +3,15 @@ import { reactive, toRef, ref } from 'vue'
 import * as v from 'valibot'
 
 import CardChoice, { type Card } from './CardChoice.vue'
+import SuccessModal from './SuccessModal.vue'
 import { useSubmission } from './useSubmission'
 import { useCards } from './useCards'
 import { useToasts } from '@/composables/useToasts'
 
 const { mapOfCards, mysticalArchiveCards } = useCards()
 const { showErrorToast } = useToasts()
+
+const isSuccessModalOpen = ref(false)
 
 const schema = v.object({
   displayName: v.pipe(
@@ -30,6 +33,9 @@ const { submit, isSubmitting } = useSubmission(
   toRef(state, 'displayName'),
   mapOfCards,
   tiebreakerCard,
+  () => {
+    isSuccessModalOpen.value = true
+  },
 )
 
 async function handleSubmit() {
@@ -38,6 +44,14 @@ async function handleSubmit() {
     return
   }
   await submit()
+}
+
+function resetForm() {
+  state.displayName = ''
+  for (const category of Object.values(mapOfCards.value)) {
+    category.selected = undefined
+  }
+  tiebreakerCard.value = undefined
 }
 </script>
 
@@ -70,4 +84,6 @@ async function handleSubmit() {
     />
     <UButton :loading="isSubmitting" size="xl" block type="submit"> Submit </UButton>
   </UForm>
+
+  <SuccessModal v-model:open="isSuccessModalOpen" @close="resetForm" />
 </template>
