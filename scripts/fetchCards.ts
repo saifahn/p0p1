@@ -68,7 +68,7 @@ async function fetchCards(setCode: string): Promise<ScryfallCard[]> {
 }
 
 async function saveSetData(setCode: string, cards: ScryfallCard[]): Promise<void> {
-  const setsDir = join(import.meta.dir, '/src/sets')
+  const setsDir = join(import.meta.dir, '../src/sets')
   const setCodeUpper = setCode.toUpperCase()
 
   const jsonPath = join(setsDir, `${setCodeUpper}-card-base.json`)

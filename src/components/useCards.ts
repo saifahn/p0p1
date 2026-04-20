@@ -1,4 +1,4 @@
-import cardData from '@/sets/SOS-slimmed.json'
+import cuCardData from '@/sets/SOS-commons-uncommons.json'
 import { computed, type Ref, type ComputedRef, ref } from 'vue'
 import type { Card } from './CardChoice.vue'
 
@@ -19,12 +19,10 @@ export type MapOfCards = {
 }
 
 export function useCards() {
-  const cards = ref(cardData)
+  const commonUncommonCards = ref(cuCardData)
 
-  const commonCards = computed(() => cards.value.filter((card) => card.rarity === 'common'))
-
-  const commonUncommonCards = computed(() =>
-    cards.value.filter((card) => card.rarity === 'uncommon' || card.rarity === 'common'),
+  const commonCards = computed(() =>
+    commonUncommonCards.value.filter((card) => card.rarity === 'common'),
   )
 
   const mapOfCards = ref({
