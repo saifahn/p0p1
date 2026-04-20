@@ -23,7 +23,7 @@ const state = reactive({
   displayName: '',
 })
 
-const { submit, isSubmitting } = useSubmission(toRef(state.displayName), mapOfCards)
+const { submit, isSubmitting } = useSubmission(toRef(state, 'displayName'), mapOfCards)
 
 async function handleSubmit() {
   if (!state.displayName) {
