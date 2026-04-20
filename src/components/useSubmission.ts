@@ -7,7 +7,7 @@ import type { Card } from './CardChoice.vue'
 export function useSubmission(
   displayName: Ref<string>,
   mapOfCards: Ref<MapOfCards>,
-  tiebreaker: Ref<Card>,
+  tiebreaker: Ref<Card | undefined>,
   onSuccess: () => void,
 ) {
   const { showErrorToast } = useToasts()
