@@ -1,5 +1,5 @@
-import cuCardData from '@/sets/SOS-commons-uncommons.json'
-import soaCardData from '@/sets/SOA-cards.json'
+import cuCardData from '@/common/sets/SOS-commons-uncommons.json'
+import soaCardData from '@/common/sets/SOA-cards.json'
 import { computed, type Ref, type ComputedRef, ref } from 'vue'
 import type { Card } from '../components/CardChoice.vue'
 
