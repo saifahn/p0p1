@@ -1,8 +1,28 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import type { SegmentRow } from '../composables/useParticipantBars'
 
 const props = defineProps<{ segment: SegmentRow }>()
+
+const triggerRef = ref<HTMLElement | null>(null)
+const width = ref(0)
+
+let observer: ResizeObserver | null = null
+
+onMounted(() => {
+  if (!triggerRef.value) return
+  observer = new ResizeObserver((entries) => {
+    width.value = entries[0]?.contentRect.width ?? 0
+  })
+  observer.observe(triggerRef.value)
+})
+
+onBeforeUnmount(() => {
+  observer?.disconnect()
+  observer = null
+})
+
+const showName = computed(() => width.value >= 60)
 
 const flexValue = computed(() => (props.segment.found ? props.segment.winRate : 0.01))
 
@@ -26,11 +46,12 @@ const popoverText = computed(() => {
 <template>
   <UPopover mode="click">
     <div
+      ref="triggerRef"
       :style="{ flex: flexValue, ...bgStyle }"
-      class="relative w-full bg-cover bg-center cursor-pointer overflow-hidden border-b border-black/30 last:border-b-0"
+      class="relative h-full bg-cover bg-center cursor-pointer overflow-hidden border-r border-black/30 last:border-r-0"
     >
       <div class="absolute inset-0 bg-black/35" />
-      <div class="relative h-full flex items-center justify-center gap-1 text-white">
+      <div class="relative h-full flex items-center gap-1 px-1 text-white">
         <template v-if="segment.found">
           <i
             v-for="sym in segment.slot.manaSymbols"
@@ -39,6 +60,12 @@ const popoverText = computed(() => {
           />
         </template>
         <span v-else class="font-bold">?</span>
+        <span
+          v-if="showName && segment.found"
+          class="text-xs whitespace-nowrap overflow-hidden text-ellipsis font-medium drop-shadow"
+        >
+          {{ segment.cardName }}
+        </span>
       </div>
     </div>
     <template #content>

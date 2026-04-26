@@ -11,7 +11,7 @@ const maxTotal = computed(() =>
 </script>
 
 <template>
-  <div class="flex flex-row items-end gap-1 overflow-x-auto pb-2">
+  <div class="flex flex-col gap-1">
     <ParticipantBar
       v-for="row in rows"
       :key="row.displayName"
