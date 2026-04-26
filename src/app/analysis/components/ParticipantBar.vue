@@ -3,28 +3,36 @@ import { computed } from 'vue'
 import type { ParticipantRow } from '../composables/useParticipantBars'
 import BarSegment from './BarSegment.vue'
 
-const props = defineProps<{ row: ParticipantRow }>()
+const props = defineProps<{ row: ParticipantRow; maxTotal: number }>()
+
+const MAX_BAR_PX = 384
 
 const totalLabel = computed(() => props.row.total.toFixed(2))
+
+const barHeight = computed(() => {
+  if (props.maxTotal <= 0) return '0px'
+  return `${(props.row.total / props.maxTotal) * MAX_BAR_PX}px`
+})
 </script>
 
 <template>
-  <div class="flex items-center gap-2 py-1">
+  <div class="flex flex-col items-center gap-1 w-16 shrink-0">
+    <div class="text-xs tabular-nums">{{ totalLabel }}</div>
     <div
-      class="w-32 shrink-0 truncate text-sm font-medium"
-      :title="row.displayName"
+      :style="{ height: barHeight }"
+      class="flex flex-col-reverse w-full rounded overflow-hidden bg-neutral-800"
     >
-      {{ row.displayName }}
-    </div>
-    <div class="flex h-12 grow rounded overflow-hidden bg-neutral-800">
       <BarSegment
         v-for="seg in row.segments"
         :key="seg.slot.key"
         :segment="seg"
       />
     </div>
-    <div class="w-12 shrink-0 text-right text-sm tabular-nums">
-      {{ totalLabel }}
+    <div
+      class="w-full text-center text-xs font-medium truncate"
+      :title="row.displayName"
+    >
+      {{ row.displayName }}
     </div>
   </div>
 </template>
