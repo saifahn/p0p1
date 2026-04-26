@@ -2,7 +2,7 @@ import { useToasts } from '@/composables/useToasts'
 import type { MapOfCards } from './useCards'
 import { ref, toValue, type Ref } from 'vue'
 import { handleSubmission } from '@/handleSubmission'
-import type { Card } from './CardChoice.vue'
+import type { Card } from '../components/CardChoice.vue'
 
 export function useSubmission(
   displayName: Ref<string>,
