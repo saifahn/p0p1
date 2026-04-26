@@ -20,7 +20,7 @@ Visualize ~20 participants' picks (10 cards + 1 tiebreaker) from the SOS set cha
 2. **Top picks overall** — ranked card grid w/ images, "picked by X/N". Headline.
 3. **Per-slot breakdown** — one row per slot (W/U/B/R/G + 5 guilds). Top 2–3 cards per slot w/ %.
 4. **Popularity vs. performance** — scatter, x = 17Lands GIH WR, y = group pick rate. Quadrant labels.
-5. **Color / rarity distribution** — stacked bars, aggregate picks by WUBRG + by rarity.
+5. **Color / rarity distribution** — stacked bars, aggregate picks by WUBRG + by rarity. _Superseded by `features/participant-stacked-bars.md`._
 6. **Tiebreaker** — own section, ranked Mystical Archive picks.
 7. _(optional)_ **Outliers** — most contrarian / most consensus submission.
 
