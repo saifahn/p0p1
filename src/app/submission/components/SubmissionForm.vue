@@ -4,8 +4,8 @@ import * as v from 'valibot'
 
 import CardChoice, { type Card } from './CardChoice.vue'
 import SuccessModal from './SuccessModal.vue'
-import { useSubmission } from './useSubmission'
-import { useCards } from './useCards'
+import { useSubmission } from '../composables/useSubmission'
+import { useCards } from '../composables/useCards'
 import { useToasts } from '@/composables/useToasts'
 
 const { mapOfCards, mysticalArchiveCards } = useCards()
