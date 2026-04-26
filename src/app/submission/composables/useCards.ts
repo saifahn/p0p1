@@ -1,7 +1,7 @@
 import cuCardData from '@/sets/SOS-commons-uncommons.json'
 import soaCardData from '@/sets/SOA-cards.json'
 import { computed, type Ref, type ComputedRef, ref } from 'vue'
-import type { Card } from './CardChoice.vue'
+import type { Card } from '../components/CardChoice.vue'
 
 type MtgColorCode = 'W' | 'U' | 'B' | 'R' | 'G'
 
