@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import SubmissionPage from './app/submission/views/SubmissionPage.vue'
+import AnalysisPage from './app/analysis/views/AnalysisPage.vue'
 </script>
 
 <template>
   <UApp>
-    <SubmissionPage />
+    <AnalysisPage />
   </UApp>
 </template>
 
