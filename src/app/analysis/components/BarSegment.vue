@@ -1,28 +1,8 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { computed } from 'vue'
 import type { SegmentRow } from '../composables/useParticipantBars'
 
 const props = defineProps<{ segment: SegmentRow }>()
-
-const triggerRef = ref<HTMLElement | null>(null)
-const width = ref(0)
-
-let observer: ResizeObserver | null = null
-
-onMounted(() => {
-  if (!triggerRef.value) return
-  observer = new ResizeObserver((entries) => {
-    width.value = entries[0]?.contentRect.width ?? 0
-  })
-  observer.observe(triggerRef.value)
-})
-
-onBeforeUnmount(() => {
-  observer?.disconnect()
-  observer = null
-})
-
-const showName = computed(() => width.value >= 60)
 
 const flexValue = computed(() => (props.segment.found ? props.segment.winRate : 0.01))
 
@@ -53,15 +33,17 @@ const popoverText = computed(() => {
       <div class="absolute inset-0 bg-black/35" />
       <div class="relative h-full flex items-center gap-1 px-1 text-white">
         <template v-if="segment.found">
-          <i
+          <img
             v-for="sym in segment.slot.manaSymbols"
             :key="sym"
-            :class="['ms', 'ms-cost', 'ms-shadow', `ms-${sym}`]"
+            :src="`https://svgs.scryfall.io/card-symbols/${sym.toUpperCase()}.svg`"
+            :alt="sym"
+            class="h-4 w-4 shrink-0 drop-shadow"
           />
         </template>
         <span v-else class="font-bold">?</span>
         <span
-          v-if="showName && segment.found"
+          v-if="segment.found"
           class="text-xs whitespace-nowrap overflow-hidden text-ellipsis font-medium drop-shadow"
         >
           {{ segment.cardName }}
