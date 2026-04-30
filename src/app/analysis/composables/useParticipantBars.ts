@@ -3,39 +3,30 @@ import submissionsData from '@/app/analysis/data/submissions-sos.json'
 import sosCardData from '@/common/sets/SOS-commons-uncommons.json'
 import { SLOTS, type SlotDef } from '@/app/analysis/slots'
 
-interface SosCard {
+type ScryfallCardTrimmed = {
   name: string
   colors: string[]
   rarity: string
   image_uris: { normal: string; art_crop: string }
 }
 
-interface SeventeenLandsDataEntry {
+type SeventeenLandsDataEntry = {
   name: string
   ever_drawn_win_rate: number
 }
 
-interface Submission {
+type Submission = {
   'Document ID': string
   selectedCards: string[]
   tiebreaker: string
 }
 
-export interface SegmentRow {
+export type SegmentRow = {
   slot: SlotDef
   cardName: string
-  artCrop: string | undefined
+  artCrop: string
   winRate: number
-  found: boolean
 }
-
-export interface ParticipantRow {
-  displayName: string
-  segments: SegmentRow[]
-  total: number
-}
-
-const cardByName = new Map<string, SosCard>((sosCardData as SosCard[]).map((c) => [c.name, c]))
 
 function buildSegment({
   cardName,
@@ -47,20 +38,29 @@ function buildSegment({
   data: SeventeenLandsDataEntry[]
 }): SegmentRow {
   if (!cardName) {
-    return { slot, cardName: '—', artCrop: undefined, winRate: 0, found: false }
+    throw new Error(`Card name is undefined for slot ${slot.key}`)
   }
   const cardData = data.find((entry) => entry.name === cardName)
-  const wr = cardData?.ever_drawn_win_rate
-  // TODO: return undefined or null if the card is not found
-  const sosCard = cardByName.get(cardName)
-  const found = wr !== undefined
+  if (!cardData) {
+    throw new Error(`Card data for "${cardName}" was not found in the provided data`)
+  }
+  const card: ScryfallCardTrimmed | undefined = sosCardData.find((c) => c.name === cardName)
+  if (!card) {
+    throw new Error(`Card "${cardName}" not found in the provided card file`)
+  }
+
   return {
     slot,
     cardName,
-    artCrop: sosCard?.image_uris.art_crop,
-    winRate: wr ?? 0,
-    found,
+    artCrop: card.image_uris.art_crop,
+    winRate: cardData.ever_drawn_win_rate,
   }
+}
+
+export type ParticipantRow = {
+  displayName: string
+  segments: SegmentRow[]
+  total: number
 }
 
 function buildRow(submission: Submission, data: SeventeenLandsDataEntry[]): ParticipantRow {
