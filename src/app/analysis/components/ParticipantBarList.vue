@@ -5,7 +5,7 @@ import ParticipantBar from './ParticipantBar.vue'
 
 const { rows } = useParticipantBars([])
 
-const maxTotal = computed(() => rows.value.reduce((max, r) => (r.total > max ? r.total : max), 0))
+const maxTotal = computed(() => Math.max(0, ...rows.value.map((r) => r.total)))
 </script>
 
 <template>
