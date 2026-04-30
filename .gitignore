@@ -41,3 +41,6 @@ __screenshots__/
 # Auto-generated type declarations - Nuxt UI and unplugin-auto-import, unplugin-vue-components
 auto-imports.d.ts
 components.d.ts
+
+# don't track data JSON files - they are large and can be re-generated from the API
+src/app/analysis/data/*.json
