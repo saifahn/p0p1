@@ -28,6 +28,10 @@ export type SegmentRow = {
   winRate: number
 }
 
+function getFrontFaceName(name: string) {
+  return name.split(' // ')[0] ?? name
+}
+
 function buildSegment({
   cardName,
   slot,
@@ -40,9 +44,9 @@ function buildSegment({
   if (!cardName) {
     throw new Error(`Card name is undefined for slot ${slot.key}`)
   }
-  const cardData = data.find((entry) => entry.name === cardName)
+  const cardData = data.find((entry) => entry.name === getFrontFaceName(cardName))
   if (!cardData) {
-    throw new Error(`Card data for "${cardName}" was not found in the provided data`)
+    throw new Error(`17lands card data for "${cardName}" was not found in the provided data`)
   }
   const card: ScryfallCardTrimmed | undefined = sosCardData.find((c) => c.name === cardName)
   if (!card) {
