@@ -1,5 +1,6 @@
 import { computed, type ComputedRef } from 'vue'
 import submissionsData from '@/app/analysis/data/submissions-sos.json'
+import sosCardsData from '@/common/sets/SOS-commons-uncommons.json'
 import type { MtgColor } from '@/app/analysis/slots'
 
 type SeventeenLandsScatterEntry = {
@@ -47,12 +48,14 @@ export function useScatterData(seventeenLandsData: SeventeenLandsScatterEntry[])
   totalParticipants: ComputedRef<number>
 } {
   const submissions = submissionsData as Submission[]
+  const allowedNames = new Set(sosCardsData.map((c) => getFrontFaceName(c.name)))
 
   const points = computed(() =>
     seventeenLandsData
       .filter((entry): entry is SeventeenLandsScatterEntry & { ever_drawn_win_rate: number } =>
         entry.ever_drawn_win_rate != null,
       )
+      .filter((entry) => allowedNames.has(getFrontFaceName(entry.name)))
       .map((entry) => ({
         name: entry.name,
         winRate: entry.ever_drawn_win_rate,
