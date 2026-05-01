@@ -133,8 +133,8 @@ function pct(wr: number) {
           :x="xScale(t)"
           :y="PLOT_Y + PLOT_H + 18"
           text-anchor="middle"
-          fill="#9ca3af"
           font-size="11"
+          class="dark:fill-zinc-100"
         >
           {{ pct(t) }}
         </text>
@@ -143,8 +143,8 @@ function pct(wr: number) {
         :x="PLOT_X + PLOT_W / 2"
         :y="VIEWBOX_H - 5"
         text-anchor="middle"
-        fill="#d1d5db"
         font-size="12"
+        class="dark:fill-zinc-100"
       >
         17Lands GIH win rate
       </text>
@@ -154,8 +154,8 @@ function pct(wr: number) {
         <text
           :x="PLOT_X - 8"
           :y="yScale(t) + 4"
+          class="dark:fill-zinc-100"
           text-anchor="end"
-          fill="#9ca3af"
           font-size="11"
         >
           {{ t }}
@@ -166,7 +166,7 @@ function pct(wr: number) {
         :y="PLOT_Y + PLOT_H / 2"
         :transform="`rotate(-90 14 ${PLOT_Y + PLOT_H / 2})`"
         text-anchor="middle"
-        fill="#d1d5db"
+        class="dark:fill-zinc-100"
         font-size="12"
       >
         Group pick count
@@ -192,10 +192,10 @@ function pct(wr: number) {
       <text
         :x="PLOT_X + 8"
         :y="PLOT_Y + 16"
-        fill="#fbbf24"
         font-size="12"
         font-weight="bold"
         opacity="0.8"
+        class="dark:fill-zinc-100"
       >
         Group Darlings
       </text>
@@ -203,20 +203,20 @@ function pct(wr: number) {
         :x="PLOT_X + PLOT_W - 8"
         :y="PLOT_Y + 16"
         text-anchor="end"
-        fill="#34d399"
         font-size="12"
         font-weight="bold"
         opacity="0.8"
+        class="dark:fill-zinc-100"
       >
         Consensus
       </text>
       <text
         :x="PLOT_X + 8"
         :y="PLOT_Y + PLOT_H - 8"
-        fill="#9ca3af"
         font-size="12"
         font-weight="bold"
         opacity="0.6"
+        class="dark:fill-zinc-100"
       >
         Nobody Wanted
       </text>
@@ -224,23 +224,12 @@ function pct(wr: number) {
         :x="PLOT_X + PLOT_W - 8"
         :y="PLOT_Y + PLOT_H - 8"
         text-anchor="end"
-        fill="#60a5fa"
         font-size="12"
         font-weight="bold"
         opacity="0.8"
+        class="dark:fill-zinc-100"
       >
         Group Missed
-      </text>
-
-      <text
-        v-for="p in labeledPoints"
-        :key="`lbl-${p.name}`"
-        :x="xScale(p.winRate) + 8"
-        :y="yScale(p.pickCount) + 4"
-        fill="#e5e7eb"
-        font-size="10"
-      >
-        {{ p.name }}
       </text>
     </svg>
 

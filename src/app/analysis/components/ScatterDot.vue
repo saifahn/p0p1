@@ -51,12 +51,7 @@ const isFaint = computed(() => props.point.pickCount === 0)
       :class="{ 'opacity-30 hover:opacity-100': isFaint }"
       :aria-label="point.name"
     >
-      <svg
-        :width="svgSize"
-        :height="svgSize"
-        :viewBox="`0 0 ${svgSize} ${svgSize}`"
-        class="block"
-      >
+      <svg :width="svgSize" :height="svgSize" :viewBox="`0 0 ${svgSize} ${svgSize}`" class="block">
         <template v-if="fills.length === 1">
           <circle
             :cx="halfSize"
@@ -82,13 +77,11 @@ const isFaint = computed(() => props.point.pickCount === 0)
       </svg>
     </button>
     <template #content>
-      <div class="p-2 flex flex-col gap-1 text-sm w-48">
+      <div class="p-2 flex flex-col gap-1 text-sm w-52">
         <img :src="point.imageUrl" :alt="point.name" class="w-full rounded" />
         <div class="font-semibold">{{ point.name }}</div>
-        <div class="flex justify-between text-neutral-300">
-          <span>WR {{ winRatePct }}</span>
-          <span>{{ point.pickCount }}/{{ totalParticipants }}</span>
-        </div>
+        <p>GIH win rate - {{ winRatePct }}</p>
+        <p>Picked by {{ point.pickCount }}/{{ totalParticipants }} participants</p>
       </div>
     </template>
   </UPopover>
