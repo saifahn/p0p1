@@ -12,7 +12,7 @@ type ScryfallCardTrimmed = {
 
 type SeventeenLandsDataEntry = {
   name: string
-  ever_drawn_win_rate: number
+  ever_drawn_win_rate: number | null
 }
 
 type Submission = {
@@ -57,7 +57,7 @@ function buildSegment({
     slot,
     cardName,
     artCrop: card.image_uris.art_crop,
-    winRate: cardData.ever_drawn_win_rate,
+    winRate: cardData.ever_drawn_win_rate ?? 0,
   }
 }
 
