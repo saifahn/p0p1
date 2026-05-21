@@ -2,6 +2,8 @@ import { computed, type ComputedRef } from 'vue'
 import submissionsData from '@/app/analysis/data/submissions-sos.json'
 import sosCardsData from '@/common/sets/SOS-commons-uncommons.json'
 import type { MtgColor } from '@/app/analysis/slots'
+import { getFrontFaceName } from '@/app/common/cardName'
+import { countPicks } from '@/app/analysis/lib/pickCount'
 
 type SeventeenLandsScatterEntry = {
   name: string
@@ -24,23 +26,9 @@ export type ScatterPoint = {
   imageUrl: string
 }
 
-function getFrontFaceName(name: string) {
-  return name.split(' // ')[0] ?? name
-}
-
 function parseColors(color: string): MtgColor[] {
   const valid: MtgColor[] = ['W', 'U', 'B', 'R', 'G']
   return valid.filter((c) => color.includes(c))
-}
-
-function countPicks(cardName: string, submissions: Submission[]): number {
-  let n = 0
-  for (const sub of submissions) {
-    const inSelected = sub.selectedCards.some((c) => getFrontFaceName(c) === cardName)
-    const isTiebreaker = getFrontFaceName(sub.tiebreaker) === cardName
-    if (inSelected || isTiebreaker) n += 1
-  }
-  return n
 }
 
 export function useScatterData(seventeenLandsData: SeventeenLandsScatterEntry[]): {

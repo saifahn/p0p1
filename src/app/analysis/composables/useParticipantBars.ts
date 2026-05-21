@@ -2,6 +2,7 @@ import { computed, type ComputedRef } from 'vue'
 import submissionsData from '@/app/analysis/data/submissions-sos.json'
 import sosCardData from '@/common/sets/SOS-commons-uncommons.json'
 import { SLOTS, type SlotDef } from '@/app/analysis/slots'
+import { getFrontFaceName } from '@/app/common/cardName'
 
 type ScryfallCardTrimmed = {
   name: string
@@ -26,10 +27,6 @@ export type SegmentRow = {
   cardName: string
   artCrop: string
   winRate: number
-}
-
-function getFrontFaceName(name: string) {
-  return name.split(' // ')[0] ?? name
 }
 
 function buildSegment({
