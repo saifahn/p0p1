@@ -4,17 +4,7 @@ import sosCardData from '@/common/sets/SOS-commons-uncommons.json'
 import { SLOTS, type SlotDef } from '@/app/analysis/slots'
 import { getFrontFaceName } from '@/app/common/cardName'
 import { eligibleCardsForSlot } from '@/app/analysis/lib/eligibility'
-
-type SeventeenLandsEntry = {
-  name: string
-  ever_drawn_win_rate: number | null
-}
-
-type Submission = {
-  'Document ID': string
-  selectedCards: string[]
-  tiebreaker: string
-}
+import type { SeventeenLandsEntry, Submission } from '../shared/types'
 
 export type TeamSlot = {
   slot: SlotDef

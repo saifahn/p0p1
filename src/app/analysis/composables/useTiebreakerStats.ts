@@ -3,17 +3,7 @@ import submissionsData from '@/app/analysis/data/submissions-sos.json'
 import soaCardData from '@/common/sets/SOA-cards.json'
 import { getFrontFaceName } from '@/app/common/cardName'
 import { countPicks } from '@/app/analysis/lib/pickCount'
-
-type SeventeenLandsEntry = {
-  name: string
-  ever_drawn_win_rate: number | null
-}
-
-type Submission = {
-  'Document ID': string
-  selectedCards: string[]
-  tiebreaker: string
-}
+import type { SeventeenLandsEntry, Submission } from '../shared/types'
 
 export type TiebreakerStat = {
   cardName: string

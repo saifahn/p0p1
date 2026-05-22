@@ -4,18 +4,13 @@ import sosCardsData from '@/common/sets/SOS-commons-uncommons.json'
 import type { MtgColor } from '@/app/analysis/slots'
 import { getFrontFaceName } from '@/app/common/cardName'
 import { countPicks } from '@/app/analysis/lib/pickCount'
+import type { Submission } from '../shared/types'
 
 type SeventeenLandsScatterEntry = {
   name: string
   color: string
   url: string
   ever_drawn_win_rate: number | null
-}
-
-type Submission = {
-  'Document ID': string
-  selectedCards: string[]
-  tiebreaker: string
 }
 
 export type ScatterPoint = {
@@ -40,8 +35,9 @@ export function useScatterData(seventeenLandsData: SeventeenLandsScatterEntry[])
 
   const points = computed(() =>
     seventeenLandsData
-      .filter((entry): entry is SeventeenLandsScatterEntry & { ever_drawn_win_rate: number } =>
-        entry.ever_drawn_win_rate != null,
+      .filter(
+        (entry): entry is SeventeenLandsScatterEntry & { ever_drawn_win_rate: number } =>
+          entry.ever_drawn_win_rate != null,
       )
       .filter((entry) => allowedNames.has(getFrontFaceName(entry.name)))
       .map((entry) => ({
