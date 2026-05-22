@@ -19,7 +19,7 @@ Third tab in the analysis tab set. Order: **Highlights | Bars | Scatter**. No ro
 - **Team** — one card per slot (10 cards). Tiebreaker excluded.
 - **Platonic team** — for each slot, the highest-WR eligible card from `SOS-commons-uncommons.json`, whether or not anyone picked it. Ceiling.
 - **Crowd team** — for each slot, the most-picked card. Consensus.
-- **WR** — `ever_drawn_win_rate` from `17lands-2026-04-30.json` (matches `useParticipantBars.ts`).
+- **WR** — `ever_drawn_win_rate` from `17lands-2026-05-21.json` (matches `useParticipantBars.ts`).
 - **slotAvgWR** — mean WR of all eligible cards in a slot (data join: `SOS-commons-uncommons.json` × 17Lands).
 
 ## Sections
@@ -56,7 +56,7 @@ Mirror of §3.
 
 ### 5. Tiebreaker (3 trophies)
 
-Single slot, all 65 Mystical Archive cards have WR in `17lands-2026-04-30.json` (verified).
+Single slot, all 65 Mystical Archive cards have WR in `17lands-2026-05-21.json` (verified).
 
 - **Most popular tiebreaker** — pick count.
 - **Best tiebreaker actually picked** — highest WR among submitted tiebreakers.
