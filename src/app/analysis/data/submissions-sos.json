@@ -224,22 +224,6 @@
     "tiebreaker": "Akroma's Will"
   },
   {
-    "Document ID": "ShimSham",
-    "selectedCards": [
-      "Ascendant Dustspeaker",
-      "Spellbook Seeker // Careful Study",
-      "Ulna Alley Shopkeep",
-      "Strife Scholar // Awaken the Ages",
-      "Glorious Decay",
-      "Social Snub",
-      "Borrowed Knowledge",
-      "Rapturous Moment",
-      "Growth Curve",
-      "Root Manipulation"
-    ],
-    "tiebreaker": "Pongify"
-  },
-  {
     "Document ID": "TripleB",
     "selectedCards": [
       "Elite Interceptor // Rejoinder",
@@ -254,22 +238,6 @@
       "Lluwen, Exchange Student // Pest Friend"
     ],
     "tiebreaker": "Winds of Abandon"
-  },
-  {
-    "Document ID": "ZamZim",
-    "selectedCards": [
-      "Rehearsed Debater",
-      "Textbook Tabulator",
-      "Ulna Alley Shopkeep",
-      "Rearing Embermare",
-      "Glorious Decay",
-      "Social Snub",
-      "Borrowed Knowledge",
-      "Stadium Tidalmage",
-      "Growth Curve",
-      "Root Manipulation"
-    ],
-    "tiebreaker": "Brain Freeze"
   },
   {
     "Document ID": "Zev",
@@ -318,22 +286,6 @@
       "Lluwen, Exchange Student // Pest Friend"
     ],
     "tiebreaker": "Akroma's Will"
-  },
-  {
-    "Document ID": "iSoul",
-    "selectedCards": [
-      "Honorbound Page // Forum's Favor",
-      "Procrastinate",
-      "Ulna Alley Shopkeep",
-      "Seize the Spoils",
-      "Glorious Decay",
-      "Abigale, Poet Laureate // Heroic Stanza",
-      "Borrowed Knowledge",
-      "Abstract Paintmage",
-      "Growth Curve",
-      "Root Manipulation"
-    ],
-    "tiebreaker": "Angel's Grace"
   },
   {
     "Document ID": "ironick",
@@ -414,21 +366,5 @@
       "Essenceknit Scholar"
     ],
     "tiebreaker": "Akroma's Will"
-  },
-  {
-    "Document ID": "woodnick",
-    "selectedCards": [
-      "Honorbound Page // Forum's Favor",
-      "Landscape Painter // Vibrant Idea",
-      "Ulna Alley Shopkeep",
-      "Rearing Embermare",
-      "Glorious Decay",
-      "Social Snub",
-      "Spirit Mascot",
-      "Elemental Mascot",
-      "Growth Curve",
-      "Root Manipulation"
-    ],
-    "tiebreaker": "Crop Rotation"
   }
 ]
