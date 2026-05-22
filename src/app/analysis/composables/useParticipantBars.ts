@@ -2,6 +2,8 @@ import { computed, type ComputedRef } from 'vue'
 import submissionsData from '@/app/analysis/data/submissions-sos.json'
 import sosCardData from '@/common/sets/SOS-commons-uncommons.json'
 import { SLOTS, type SlotDef } from '@/app/analysis/slots'
+import { getFrontFaceName } from '@/app/common/cardName'
+import type { SeventeenLandsEntry, Submission } from '../shared/types'
 
 type ScryfallCardTrimmed = {
   name: string
@@ -10,26 +12,11 @@ type ScryfallCardTrimmed = {
   image_uris: { normal: string; art_crop: string }
 }
 
-type SeventeenLandsDataEntry = {
-  name: string
-  ever_drawn_win_rate: number | null
-}
-
-type Submission = {
-  'Document ID': string
-  selectedCards: string[]
-  tiebreaker: string
-}
-
 export type SegmentRow = {
   slot: SlotDef
   cardName: string
   artCrop: string
   winRate: number
-}
-
-function getFrontFaceName(name: string) {
-  return name.split(' // ')[0] ?? name
 }
 
 function buildSegment({
@@ -67,7 +54,7 @@ export type ParticipantRow = {
   total: number
 }
 
-function buildRow(submission: Submission, data: SeventeenLandsDataEntry[]): ParticipantRow {
+function buildRow(submission: Submission, data: SeventeenLandsEntry[]): ParticipantRow {
   const segments = SLOTS.map((slot, i) =>
     buildSegment({ cardName: submission.selectedCards[i], slot, data }),
   )
@@ -75,7 +62,7 @@ function buildRow(submission: Submission, data: SeventeenLandsDataEntry[]): Part
   return { displayName: submission['Document ID'], segments, total }
 }
 
-export function useParticipantBars(seventeenLandsData: SeventeenLandsDataEntry[]): {
+export function useParticipantBars(seventeenLandsData: SeventeenLandsEntry[]): {
   rows: ComputedRef<ParticipantRow[]>
 } {
   if (!seventeenLandsData.length) {

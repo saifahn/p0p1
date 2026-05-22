@@ -7,7 +7,7 @@ const props = defineProps<{ row: ParticipantRow; maxTotal: number }>()
 
 const MAX_BAR_PX = 600
 
-const totalLabel = computed(() => (props.row.total * 100).toFixed(2))
+const totalLabel = computed(() => (props.row.total * 100).toFixed(1))
 
 const barWidth = computed(() => {
   if (props.maxTotal <= 0) return '0px'

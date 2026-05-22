@@ -2,8 +2,9 @@
 import { computed } from 'vue'
 import { useParticipantBars } from '../composables/useParticipantBars'
 import ParticipantBar from './ParticipantBar.vue'
+import data from '../data/17lands-2026-05-21.json'
 
-const { rows } = useParticipantBars([])
+const { rows } = useParticipantBars(data)
 
 const maxTotal = computed(() => Math.max(0, ...rows.value.map((r) => r.total)))
 </script>
