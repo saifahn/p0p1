@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useScatterData, type ScatterPoint } from '../composables/useScatterData'
-import data from '../data/17lands-2026-04-30.json'
+import { useScatterData } from '../composables/useScatterData'
+import data from '../data/17lands-2026-05-21.json'
 import ScatterDot from './ScatterDot.vue'
 
 const VIEWBOX_W = 800
@@ -49,40 +49,6 @@ function median(arr: number[]) {
 const pickedPoints = computed(() => points.value.filter((p) => p.pickCount > 0))
 const xMedian = computed(() => median(pickedPoints.value.map((p) => p.winRate)))
 const yMedian = computed(() => median(pickedPoints.value.map((p) => p.pickCount)))
-
-type Quadrant = 'consensus' | 'darlings' | 'missed' | 'nobody'
-function quadrantOf(p: ScatterPoint, xm: number, ym: number): Quadrant {
-  const right = p.winRate >= xm
-  const top = p.pickCount >= ym
-  if (top && right) return 'consensus'
-  if (top && !right) return 'darlings'
-  if (!top && right) return 'missed'
-  return 'nobody'
-}
-
-const labeledNames = computed(() => {
-  const xm = xMedian.value
-  const ym = yMedian.value
-  const groups: Record<Quadrant, ScatterPoint[]> = {
-    consensus: [],
-    darlings: [],
-    missed: [],
-    nobody: [],
-  }
-  for (const p of pickedPoints.value) groups[quadrantOf(p, xm, ym)].push(p)
-  groups.consensus.sort((a, b) => b.pickCount - a.pickCount)
-  groups.darlings.sort((a, b) => b.pickCount - a.pickCount)
-  groups.missed.sort((a, b) => b.winRate - a.winRate)
-  return new Set(
-    [
-      ...groups.consensus.slice(0, 5),
-      ...groups.darlings.slice(0, 5),
-      ...groups.missed.slice(0, 5),
-    ].map((p) => p.name),
-  )
-})
-
-const labeledPoints = computed(() => points.value.filter((p) => labeledNames.value.has(p.name)))
 
 const xTicks = computed(() => {
   const [lo, hi] = xDomain.value
