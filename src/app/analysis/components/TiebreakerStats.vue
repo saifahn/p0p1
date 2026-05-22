@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTiebreakerStats } from '../composables/useTiebreakerStats'
-import data from '../data/17lands-2026-05-21.json'
+import type { SeventeenLandsEntry } from '../shared/types'
 
-const { stats } = useTiebreakerStats(data)
+const { seventeenlandsData } = defineProps<{ seventeenlandsData: SeventeenLandsEntry[] }>()
+
+const { stats } = useTiebreakerStats(seventeenlandsData)
 
 function pct(wr: number) {
   return `${(wr * 100).toFixed(1)}%`

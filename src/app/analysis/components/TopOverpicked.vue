@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useOverpicked } from '../composables/useOverpicked'
-import data from '../data/17lands-2026-05-21.json'
+import type { SeventeenLandsEntry } from '../shared/types'
 
-const { rows } = useOverpicked(data)
+const { seventeenlandsData } = defineProps<{ seventeenlandsData: SeventeenLandsEntry[] }>()
+
+const { rows } = useOverpicked(seventeenlandsData)
 
 function pct(wr: number) {
   return `${(wr * 100).toFixed(1)}%`

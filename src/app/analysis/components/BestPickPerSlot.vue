@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useBestPickPerSlot } from '../composables/useBestPickPerSlot'
-import data from '../data/17lands-2026-05-21.json'
+import type { SeventeenLandsEntry } from '../shared/types'
 
-const { rows } = useBestPickPerSlot(data)
+const { seventeenlandsData } = defineProps<{ seventeenlandsData: SeventeenLandsEntry[] }>()
+
+const { rows } = useBestPickPerSlot(seventeenlandsData)
 
 function pct(wr: number) {
   return `${(wr * 100).toFixed(1)}%`

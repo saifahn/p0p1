@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useTwoTeams, type Team } from '../composables/useTwoTeams'
-import data from '../data/17lands-2026-05-21.json'
+import type { SeventeenLandsEntry } from '../shared/types'
 
-const { platonic, crowd } = useTwoTeams(data)
+const { seventeenlandsData } = defineProps<{ seventeenlandsData: SeventeenLandsEntry[] }>()
+
+const { platonic, crowd } = useTwoTeams(seventeenlandsData)
 
 function pct(wr: number) {
   return `${(wr * 100).toFixed(1)}%`

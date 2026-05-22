@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useMissed } from '../composables/useMissed'
-import data from '../data/17lands-2026-05-21.json'
+import type { SeventeenLandsEntry } from '../shared/types'
 
-const { rows } = useMissed(data)
+const { seventeenlandsData } = defineProps<{ seventeenlandsData: SeventeenLandsEntry[] }>()
+
+const { rows } = useMissed(seventeenlandsData)
 
 function pct(wr: number) {
   return `${(wr * 100).toFixed(1)}%`
